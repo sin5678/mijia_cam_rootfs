@@ -1,0 +1,28 @@
+#!/bin/sh
+#
+
+do_start() {
+	rl=$(runlevel -p)
+	runlevel -s $rl
+}
+
+do_stop() {
+	runlevel poweroff
+}
+
+case "$1" in
+	start)
+		[ -f /tmp/factory_mode ] && exit 1
+		do_start
+		;;
+	stop)
+		do_stop
+		;;
+	restart|reload)
+		"$0" stop
+		"$0" start
+		;;
+	*)
+		echo "Usage: $0 {start|stop|restart}"
+		exit 1
+esac

@@ -1,0 +1,5 @@
+#!/bin/sh
+set -x 
+source /etc/hooks/pre-init
+
+exec chroot . /bin/busybox linuxrc

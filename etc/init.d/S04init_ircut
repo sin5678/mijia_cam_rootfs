@@ -1,0 +1,29 @@
+#!/bin/sh
+#
+# init ircut to day mode...
+#
+
+[ -f /tmp/factory_mode ] && exit 1
+
+case "$1" in
+  start)
+		echo 1 > /sys/class/timed_output/ir-filter/direction
+		echo 200 > /sys/class/timed_output/ir-filter/enable
+		sleep 0.2
+		echo 0 > /sys/class/timed_output/ir-filter/direction
+		echo 200 > /sys/class/timed_output/ir-filter/enable
+	;;
+  stop)
+        echo "do nothing"
+        ;;
+  restart|reload)
+        "$0" stop
+        "$0" start
+        ;;
+  *)
+        echo "Usage: $0 {start|stop|restart}"
+        exit 1
+esac
+
+exit $?
+

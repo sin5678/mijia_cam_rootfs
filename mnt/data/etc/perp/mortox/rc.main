@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+exec 2>&1
+. ../.common/rc.main
+start() {
+	echo "start $SVNAME"
+	exec mortoxd
+}
+eval ${TARGET} "$@"

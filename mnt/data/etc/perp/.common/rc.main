@@ -1,0 +1,70 @@
+#!/bin/sh
+#
+exec 2>&1
+
+TARGET=${1}
+SVNAME=${2}
+RESET_LIMIT_INTERVAL=60
+RESET_LIMIT_TIMES_PER_INTERVAL=3
+RESET_LIMIT_FILE="${PERP_BASE}/.control/$SVNAME.reset"
+RESET_STATISTICS_FILE="${PERP_BASE}/.control/reset-statistics"
+## start target:
+start() {
+	echo "start $SVNAME"
+	exec "$SVNAME"
+}
+
+rate_limit() {
+	cur_ts=$(date +%s)
+	last_ts=0
+	count=0
+
+	if [ -r "${RESET_LIMIT_FILE}" ]; then
+		read last_ts count <"${RESET_LIMIT_FILE}"
+	fi
+
+	ts_diff=$((cur_ts - last_ts))
+
+	if [[ $ts_diff -lt 0 ]] || [[ $ts_diff -gt ${RESET_LIMIT_INTERVAL} ]]; then
+		last_ts=$cur_ts
+		count=0
+	fi
+	if [[ $count -ge ${RESET_LIMIT_TIMES_PER_INTERVAL} ]]; then
+		echo "perp: $SVNAME: Resetting is disabled in $((RESET_LIMIT_INTERVAL - ts_diff + 1)) seconds."
+		sleep $((RESET_LIMIT_INTERVAL - ts_diff + 1))
+		last_ts=$(date +%s)
+		count=0
+	fi
+	let count++
+	echo $last_ts $count >"${RESET_LIMIT_FILE}"
+}
+
+update_statistics() {
+	if [ ! -e "$RESET_STATISTICS_FILE" ]; then
+		echo "$1 1" > "$RESET_STATISTICS_FILE";
+		return
+	fi
+	while read sv c; do
+		if [[ "$sv" == "$1" ]]; then
+			sed -i "/^$sv /c$1 $((c+1))" "$RESET_STATISTICS_FILE"
+			return;
+		fi
+	done < "$RESET_STATISTICS_FILE"
+	echo "$1 1" >> "$RESET_STATISTICS_FILE"
+}
+
+## reset target:
+reset() {
+    case $3 in
+      'exit' )
+          echo "perp: $SVNAME exited status $4" ;;
+      'signal' )
+          echo "perp: $SVNAME killed on signal $5" ;;
+      * )
+          echo "perp: $SVNAME stopped ($3)" ;;
+    esac
+	update_statistics "$SVNAME"
+	rate_limit
+    exit 0
+}
+

@@ -1,0 +1,4 @@
+PATH=/mnt/data/bin:/bin:/sbin:/usr/bin:/usr/sbin
+LD_LIBRARY_PATH=/mnt/data/lib
+PERP_BASE=/etc/perp
+

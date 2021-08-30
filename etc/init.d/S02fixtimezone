@@ -1,0 +1,5 @@
+#!/bin/sh
+#
+# Set timezone info kernel
+#
+fix_tz a | sissylog fix_tz &

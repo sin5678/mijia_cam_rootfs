@@ -1,0 +1,230 @@
+AD 0x26 #Andorra 
+AE 0x26 #United Arab Emirates 
+AF 0x42 #Afghanistan 
+AG 0x30 #Antigua & Barbuda 
+AI 0x26 #Anguilla(UK) 
+AL 0x26 #Albania 
+AM 0x26 #Armenia 
+AO 0x26 #Angola 
+AQ 0x26 #Antarctica 
+AR 0x57 #Argentina 
+AS 0x34 #American Samoa 
+AT 0x26 #Austria 
+AU 0x45 #Australia 
+AW 0x34 #Aruba 
+AZ 0x26 #Azerbaijan 
+BA 0x26 #Bosnia & Herzegovina 
+BB 0x34 #Barbados 
+BD 0x26 #Bangladesh 
+BE 0x26 #Belgium 
+BF 0x26 #Burkina Faso 
+BG 0x26 #Bulgaria 
+BH 0x47 #Bahrain 
+BI 0x26 #Burundi 
+BJ 0x26 #Benin 
+BN 0x47 #Brunei 
+BO 0x30 #Bolivia 
+BR 0x34 #Brazil 
+BS 0x34 #Bahamas 
+BW 0x26 #Botswana 
+BY 0x26 #Belarus 
+BZ 0x34 #Belize 
+CA 0x34 #Canada 
+CC 0x26 #Cocos (Keeling) Islands (Australia) 
+CD 0x26 #Congo, Republic of the 
+CF 0x26 #Central African Republic 
+CG 0x26 #Congo, Democratic Republic of the. Zaire 
+CH 0x26 #Switzerland 
+CI 0x26 #Cote d'Ivoire 
+CK 0x26 #Cook Islands 
+CL 0x30 #Chile 
+CM 0x26 #Cameroon 
+CN 0x48 #China 
+CO 0x34 #Colombia 
+CR 0x34 #Costa Rica 
+CV 0x26 #Cape Verde 
+CX 0x45 #Christmas Island (Australia) 
+CY 0x26 #Cyprus 
+CZ 0x26 #Czech Republic 
+DE 0x26 #Germany 
+DJ 0x26 #Djibouti 
+DK 0x26 #Denmark 
+DM 0x34 #Dominica 
+DO 0x34 #Dominican Republic 
+DZ 0x26 #Algeria 
+EC 0x34 #Ecuador 
+EE 0x26 #Estonia 
+EG 0x47 #Egypt 
+EH 0x47 #Western Sahara 
+ER 0x26 #Eritrea 
+ES 0x26 #Spain, Canary Islands, Ceuta, Melilla 
+ET 0x26 #Ethiopia 
+FI 0x26 #Finland 
+FJ 0x34 #Fiji 
+FK 0x26 #Falkland Islands (Islas Malvinas) (UK) 
+FM 0x34 #Micronesia, Federated States of (USA) 
+FO 0x26 #Faroe Islands (Denmark) 
+FR 0x26 #France 
+GA 0x26 #Gabon 
+GB 0x26 #Great Britain (United Kingdom; England) 
+GD 0x34 #Grenada 
+GE 0x26 #Georgia 
+GF 0x26 #French Guiana 
+GG 0x26 #Guernsey (UK) 
+GH 0x26 #Ghana 
+GI 0x26 #Gibraltar (UK) 
+GL 0x26 #Greenland (Denmark) 
+GM 0x26 #Gambia 
+GN 0x26 #Guinea 
+GP 0x26 #Guadeloupe (France) 
+GQ 0x26 #Equatorial Guinea 
+GR 0x26 #Greece 
+GS 0x26 #South Georgia and the Sandwich Islands (UK) 
+GT 0x34 #Guatemala 
+GU 0x34 #Guam (USA) 
+GW 0x26 #Guinea-Bissau 
+GY 0x44 #Guyana 
+HK 0x26 #Hong Kong 
+HM 0x45 #Heard and McDonald Islands (Australia) 
+HN 0x32 #Honduras 
+HR 0x26 #Croatia 
+HT 0x34 #Haiti 
+HU 0x26 #Hungary 
+ID 0x54 #Indonesia 
+IE 0x26 #Ireland 
+IL 0x47 #Israel 
+IM 0x26 #Isle of Man (UK) 
+IN 0x47 #India 
+IQ 0x26 #Iraq 
+IR 0x26 #Iran 
+IS 0x26 #Iceland 
+IT 0x26 #Italy 
+JE 0x26 #Jersey (UK) 
+JM 0x51 #Jamaica 
+JO 0x49 #Jordan 
+JP 0x27 #Japan- Telec 
+KE 0x47 #Kenya 
+KG 0x26 #Kyrgyzstan 
+KH 0x26 #Cambodia 
+KI 0x26 #Kiribati 
+KN 0x34 #Saint Kitts and Nevis 
+KR 0x28 #South Korea 
+KW 0x47 #Kuwait 
+KY 0x34 #Cayman Islands (UK) 
+KZ 0x26 #Kazakhstan 
+LA 0x26 #Laos 
+LB 0x26 #Lebanon 
+LC 0x34 #Saint Lucia 
+LI 0x26 #Liechtenstein 
+LK 0x26 #Sri Lanka 
+LR 0x26 #Liberia 
+LS 0x26 #Lesotho 
+LT 0x26 #Lithuania 
+LU 0x26 #Luxembourg 
+LV 0x26 #Latvia 
+LY 0x26 #Libya 
+MA 0x47 #Morocco 
+MC 0x26 #Monaco 
+MD 0x26 #Moldova 
+ME 0x26 #Montenegro 
+MF 0x34 #Saint Martin 
+MG 0x26 #Madagascar 
+MH 0x34 #Marshall Islands (USA) 
+MK 0x26 #Republic of Macedonia (FYROM) 
+ML 0x26 #Mali 
+MM 0x26 #Burma (Myanmar) 
+MN 0x26 #Mongolia 
+MO 0x26 #Macau 
+MP 0x34 #Northern Mariana Islands (USA) 
+MQ 0x26 #Martinique (France) 
+MR 0x26 #Mauritania 
+MS 0x26 #Montserrat (UK) 
+MT 0x26 #Malta 
+MU 0x26 #Mauritius 
+MV 0x26 #Maldives 
+MW 0x26 #Malawi 
+MX 0x34 #Mexico 
+MY 0x47 #Malaysia 
+MZ 0x26 #Mozambique 
+NA 0x26 #Namibia 
+NC 0x26 #New Caledonia 
+NE 0x26 #Niger 
+NF 0x45 #Norfolk Island (Australia) 
+NG 0x50 #Nigeria 
+NI 0x34 #Nicaragua 
+NL 0x26 #Netherlands 
+NO 0x26 #Norway 
+NP 0x47 #Nepal 
+NR 0x26 #Nauru 
+NU 0x45 #Niue 
+NZ 0x45 #New Zealand 
+OM 0x26 #Oman 
+PA 0x34 #Panama 
+PE 0x34 #Peru 
+PF 0x26 #French Polynesia (France) 
+PG 0x26 #Papua New Guinea 
+PH 0x26 #Philippines 
+PK 0x51 #Pakistan 
+PL 0x26 #Poland 
+PM 0x26 #Saint Pierre and Miquelon (France) 
+PR 0x34 #Puerto Rico 
+PT 0x26 #Portugal 
+PW 0x34 #Palau 
+PY 0x34 #Paraguay 
+QA 0x51 #Qatar 
+RE 0x26 #Reunion (France) 
+RO 0x26 #Romania 
+RS 0x26 #Serbia, Kosovo 
+RU 0x59 #Russia(fac/gost), Kaliningrad 
+RW 0x26 #Rwanda 
+SA 0x26 #Saudi Arabia 
+SB 0x26 #Solomon Islands 
+SC 0x34 #Seychelles 
+SE 0x26 #Sweden 
+SG 0x47 #Singapore 
+SH 0x26 #Saint Helena (UK) 
+SI 0x26 #Slovenia 
+SJ 0x26 #Svalbard (Norway) 
+SK 0x26 #Slovakia 
+SL 0x26 #Sierra Leone 
+SM 0x26 #San Marino 
+SN 0x26 #Senegal 
+SO 0x26 #Somalia 
+SR 0x34 #Suriname 
+ST 0x34 #Sao Tome and Principe 
+SV 0x30 #El Salvador 
+SX 0x34 #Sint Marteen 
+SZ 0x26 #Swaziland 
+TC 0x26 #Turks and Caicos Islands (UK) 
+TD 0x26 #Chad 
+TF 0x26 #French Southern and Antarctic Lands (FR Southern Territories) 
+TG 0x26 #Togo 
+TH 0x26 #Thailand 
+TJ 0x26 #Tajikistan 
+TK 0x45 #Tokelau 
+TM 0x26 #Turkmenistan 
+TN 0x47 #Tunisia 
+TO 0x26 #Tonga 
+TR 0x26 #Turkey, Northern Cyprus 
+TT 0x42 #Trinidad & Tobago 
+TW 0x39 #Taiwan 
+TZ 0x26 #Tanzania 
+UA 0x26 #Ukraine 
+UG 0x26 #Uganda 
+US 0x34 #United States of America (USA) 
+UY 0x34 #Uruguay 
+UZ 0x47 #Uzbekistan 
+VA 0x26 #Holy See (Vatican City) 
+VC 0x34 #Saint Vincent and the Grenadines 
+VE 0x30 #Venezuela 
+VI 0x34 #United States Virgin Islands (USA) 
+VN 0x26 #Vietnam 
+VU 0x26 #Vanuatu 
+WF 0x26 #Wallis and Futuna (France) 
+WS 0x34 #Samoa 
+YE 0x26 #Yemen 
+YT 0x26 #Mayotte (France) 
+ZA 0x26 #South Africa 
+ZM 0x26 #Zambia 
+ZW 0x26 #Zimbabwe
+HW 0x26 #haiwai 

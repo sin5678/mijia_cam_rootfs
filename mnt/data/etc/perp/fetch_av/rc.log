@@ -1,0 +1,27 @@
+#!/bin/sh
+exec 2>&1
+
+TARGET=${1}
+SVNAME=${2}
+
+## start target:
+start() {
+    exec sissylog "$SVNAME"
+}
+
+## reset target:
+reset() {
+    case $3 in
+      'exit' )
+          echo "perp: exited status $4" ;;
+      'signal' )
+          echo "perp: killed on signal $5" ;;
+      * )
+          echo "perp: stopped ($3)" ;;
+    esac
+    exit 0
+}
+
+
+eval ${TARGET} "$@"
+

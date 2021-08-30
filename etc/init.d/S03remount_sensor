@@ -1,0 +1,28 @@
+#!/bin/sh
+#
+# Remount sensor config file path to data...
+#
+
+[ -f /tmp/factory_mode ] && exit 1
+
+case "$1" in
+  start)
+		echo "Remount sensor config file path to data..."
+		mkdir -p /mnt/data/sensor
+		mount --bind /mnt/data/sensor /etc/sensor
+
+	;;
+  stop)
+        echo "do nothing"
+        ;;
+  restart|reload)
+        "$0" stop
+        "$0" start
+        ;;
+  *)
+        echo "Usage: $0 {start|stop|restart}"
+        exit 1
+esac
+
+exit $?
+

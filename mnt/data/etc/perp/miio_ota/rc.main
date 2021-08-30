@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+exec 2>&1
+. ../.common/rc.main
+## start target:
+start() {
+	echo "start miio_ota"
+	exec miio_ota -p /mnt/data/bin/pre-ota.sh -P /mnt/data/bin/post-ota.sh
+}
+
+eval ${TARGET} "$@"

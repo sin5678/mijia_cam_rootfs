@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+exec 2>&1
+. ../.common/rc.main
+
+## start target:
+start() {
+	echo "start miio_client_helper"
+	exec  miio_client_helper_nomqtt.sh
+}
+
+eval ${TARGET} "$@"

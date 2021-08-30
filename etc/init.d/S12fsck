@@ -1,0 +1,28 @@
+#!/bin/sh
+FSCK_FILE=/mnt/data/.fsck_device
+[ ! -r "$FSCK_FILE" ] && exit 0
+
+do_fsck() {
+	umount /dev/$dev
+	sissylog
+	fsck.vfat -aw /dev/$dev
+	# miio_sdcard will check and mount the device again.
+}
+
+case "$1" in
+	start)
+		dev=$(cat "$FSCK_FILE")
+		[ -b /dev/$dev ] && do_fsck /dev/$dev | sissylog boot_fsck
+		rm -f "$FSCK_FILE"
+		;;
+	stop)  ;;
+	restart|reload)
+		"$0" start
+		;;
+	*)
+		echo "Usage: $0 {start|stop|restart}"
+		exit 1
+esac
+
+exit $?
+

@@ -1,0 +1,43 @@
+#!/bin/sh
+#
+# logo
+#
+
+logo_dir="/mnt/data/data/font"
+logo48_default_link="$logo_dir/logo48.1555"
+logo16_default_link="$logo_dir/logo16.1555"
+
+case "$1" in
+	start)
+		rg=`factory get regioncode`
+		echo $rg
+		if [ -z $rg ];then
+			rg="CN"
+		fi
+		logo48=$rg"_logo48.1555"
+		logo16=$rg"_logo16.1555"
+		echo $logo48
+		echo $logo16
+		if [ -f "$logo_dir/$logo48" ]; then
+			echo "link logo48 sucess"
+			ln -sf "$logo_dir/$logo48" $logo48_default_link
+		fi
+		if [ -f "$logo_dir/$logo16" ]; then
+			echo "link logo16 sucess"
+		 	ln -sf "$logo_dir/$logo16" $logo16_default_link
+		fi
+	;;
+	stop)
+		echo "do nothing"
+	;;
+	restart|reload)
+		"$0" stop
+		"$0" start
+	;;
+	*)
+		echo "Usage: $0 {start|stop|restart}"
+		exit 1
+esac
+
+exit $?
+

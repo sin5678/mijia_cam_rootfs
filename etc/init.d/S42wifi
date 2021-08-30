@@ -1,0 +1,41 @@
+#!/bin/sh
+#
+# Start the wifi...
+#
+
+
+case "$1" in
+  start)
+		echo "install wlan driver...."
+		rg=`factory get regioncode`
+		if [ -z $rg ];then
+			rg="CN"
+		fi
+		pl=`grep -wr $rg /etc/wifi_chplan.txt | cut -d " " -f 2 | head -1`
+		if [ "$rg" == "HW" ];then
+			modprobe wlan rtw_channel_plan=$pl rtw_adaptivity_en=1
+		else
+			modprobe wlan rtw_channel_plan=$pl
+		fi
+		
+		[ -f /tmp/factory_mode ] && exit 1
+        echo "Starting wifi ......"
+        /mnt/data/bin/wifi_start.sh &
+		;;
+  stop)
+        printf "Stopping wifi..."
+	/usr/bin/killall wpa_supplicant hostapd dhcpd
+	/sbin/ifconfig wlan0 down
+	/sbin/modprobe -r wlan
+        ;;
+  restart|reload)
+        "$0" stop
+        "$0" start
+        ;;
+  *)
+        echo "Usage: $0 {start|stop|restart}"
+        exit 1
+esac
+
+exit $?
+

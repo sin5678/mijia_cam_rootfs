@@ -1,0 +1,11 @@
+kernel/drivers/usb/gadget/libcomposite.ko:
+kernel/drivers/usb/gadget/g_ether.ko: kernel/drivers/usb/gadget/libcomposite.ko
+kernel/drivers/usb/gadget/g_webcam.ko: kernel/drivers/media/v4l2-core/videobuf2-vmalloc.ko kernel/drivers/usb/gadget/libcomposite.ko
+kernel/drivers/media/v4l2-core/videobuf2-vmalloc.ko:
+pwmcore.ko:
+sinfo.ko:
+audio.ko:
+wlan.ko:
+tx-isp.ko:
+pwmhal.ko:
+sensor_ps5250.ko:

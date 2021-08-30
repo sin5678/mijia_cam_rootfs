@@ -1,0 +1,929 @@
+Jan  1 08:00:02 syslogd started: BusyBox v1.28.1
+Jan  1 08:00:02 kernel: klogd started: BusyBox v1.28.1 (2019-04-15 04:38:20 UTC)
+Jan  1 08:00:02 kernel: [    0.000000] Initializing cgroup subsys cpu
+Jan  1 08:00:02 kernel: [    0.000000] Initializing cgroup subsys cpuacct
+Jan  1 08:00:02 kernel: [    0.000000] Linux version 3.10.14 (jenkins@64bf91150a4e) (gcc version 4.7.2 (Ingenic r2.3.3 2016.12) ) #1 PREEMPT Mon Apr 15 04:51:31 UTC 2019
+Jan  1 08:00:02 kernel: [    0.000000] CPU0 RESET ERROR PC:C4C1D8C0
+Jan  1 08:00:02 kernel: [    0.000000] CPU0 revision is: 00d00101 (Ingenic Xburst)
+Jan  1 08:00:02 kernel: [    0.000000] FPU revision is: 00b70000
+Jan  1 08:00:02 kernel: [    0.000000] cgu_get_rate, parent = 712704000, rate = 0, m = 0, n = 0, reg val = 0x000020ff
+Jan  1 08:00:02 kernel: [    0.000000] CCLK:712MHz L2CLK:356Mhz H0CLK:180MHz H2CLK:180Mhz PCLK:90Mhz
+Jan  1 08:00:02 kernel: [    0.000000] Determined physical RAM map:
+Jan  1 08:00:02 kernel: [    0.000000]  memory: 00438000 @ 00010000 (usable)
+Jan  1 08:00:02 kernel: [    0.083961] jz-dma jz-dma: JZ SoC DMA initialized
+Jan  1 08:00:02 kernel: [    0.084356] usbcore: registered new interface driver usbfs
+Jan  1 08:00:02 kernel: [    0.084422] usbcore: registered new interface driver hub
+Jan  1 08:00:02 kernel: [    0.084615] usbcore: registered new device driver usb
+Jan  1 08:00:02 kernel: [    0.084866] i2c-gpio i2c-gpio.1: using pins 57 (SDA) and 58 (SCL)
+Jan  1 08:00:02 kernel: [    0.084988]  (null): set:224  hold:225 dev=90000000 h=450 l=450
+Jan  1 08:00:02 kernel: [    0.085110] media: Linux media interface: v0.10
+Jan  1 08:00:02 kernel: [    0.085166] Linux video capture interface: v2.00
+Jan  1 08:00:02 kernel: [    0.086448] cfg80211: Calling CRDA to update world regulatory domain
+Jan  1 08:00:02 kernel: [    0.086507] cfg80211: World regulatory domain updated:
+Jan  1 08:00:02 kernel: [    0.086518] cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
+Jan  1 08:00:02 kernel: [    0.086534] cfg80211:   (2402000 KHz - 2472000 KHz @ 40000 KHz), (2000 mBi, 0 mBm)
+Jan  1 08:00:02 kernel: [    0.086550] cfg80211:   (2457000 KHz - 2482000 KHz @ 20000 KHz), (2000 mBi, 0 mBm)
+Jan  1 08:00:02 kernel: [    0.086564] cfg80211:   (2474000 KHz - 2494000 KHz @ 20000 KHz), (2000 mBi, 0 mBm)
+Jan  1 08:00:02 kernel: [    0.086580] cfg80211:   (5170000 KHz - 5250000 KHz @ 80000 KHz), (2000 mBi, 0 mBm)
+Jan  1 08:00:02 kernel: [    0.086594] cfg80211:   (5250000 KHz - 5330000 KHz @ 80000 KHz), (2000 mBi, 0 mBm)
+Jan  1 08:00:02 kernel: [    0.086610] cfg80211:   (5490000 KHz - 5730000 KHz @ 160000 KHz), (2000 mBi, 0 mBm)
+Jan  1 08:00:02 kernel: [    0.086624] cfg80211:   (5735000 KHz - 5835000 KHz @ 80000 KHz), (2000 mBi, 0 mBm)
+Jan  1 08:00:02 kernel: [    0.086638] cfg80211:   (57240000 KHz - 63720000 KHz @ 2160000 KHz), (N/A, 0 mBm)
+Jan  1 08:00:02 kernel: [    0.086832] Switching to clocksource jz_clocksource
+Jan  1 08:00:02 kernel: [    0.088001] dwc2 otg probe start
+Jan  1 08:00:02 kernel: [    0.088045] jz-dwc2 jz-dwc2: cgu clk gate get error
+Jan  1 08:00:02 kernel: [    0.088073] DWC IN DEVICE ONLY MODE
+Jan  1 08:00:02 kernel: [    0.088741] dwc2 dwc2: Keep PHY ON
+Jan  1 08:00:02 kernel: [    0.088757] dwc2 dwc2: Using Buffer DMA mode
+Jan  1 08:00:02 kernel: [    0.088776] dwc2 dwc2: Core Release: 3.00a
+Jan  1 08:00:02 kernel: [    0.089108] dwc2 dwc2: enter dwc2_gadget_plug_change:2611: plugin = 1 pullup_on = 0 suspend = 0
+Jan  1 08:00:02 kernel: [    0.089122] dwc2 otg probe success
+Jan  1 08:00:02 kernel: [    0.089339] NET: Registered protocol family 2
+Jan  1 08:00:02 kernel: [    0.090166] TCP established hash table entries: 512 (order: 0, 4096 bytes)
+Jan  1 08:00:02 kernel: [    0.090208] TCP bind hash table entries: 512 (order: -1, 2048 bytes)
+Jan  1 08:00:02 kernel: [    0.090234] TCP: Hash tables configured (established 512 bind 512)
+Jan  1 08:00:02 kernel: [    0.090313] TCP: reno registered
+Jan  1 08:00:02 kernel: [    0.090334] UDP hash table entries: 256 (order: 0, 4096 bytes)
+Jan  1 08:00:02 kernel: [    0.090369] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+Jan  1 08:00:02 kernel: [    0.090724] NET: Registered protocol family 1
+Jan  1 08:00:02 kernel: [    0.091242] freq_udelay_jiffys[0].max_num = 10
+Jan  1 08:00:02 kernel: [    0.091258] cpufreq 	udelay 	loops_per_jiffy	
+Jan  1 08:00:02 kernel: [    0.091268] 12000	 59724	 59724	
+Jan  1 08:00:02 kernel: [    0.091279] 24000	 119448	 119448	
+Jan  1 08:00:02 kernel: [    0.091290] 60000	 298620	 298620	
+Jan  1 08:00:02 kernel: [    0.091300] 120000	 597241	 597241	
+Jan  1 08:00:02 kernel: [    0.091311] 200000	 995402	 995402	
+Jan  1 08:00:02 kernel: [    0.091322] 300000	 1493103	 1493103	
+Jan  1 08:00:02 kernel: [    0.091332] 600000	 2986206	 2986206	
+Jan  1 08:00:02 kernel: [    0.091343] 792000	 3941793	 3941793	
+Jan  1 08:00:02 kernel: [    0.091354] 1008000	 5016827	 5016827	
+Jan  1 08:00:02 kernel: [    0.091365] 1200000	 5972413	 5972413	
+Jan  1 08:00:02 kernel: [    0.097746] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Jan  1 08:00:02 kernel: [    0.097993] exFAT: Version 1.2.9
+Jan  1 08:00:02 kernel: [    0.098110] exFAT: Core Version 1.2.9
+Jan  1 08:00:02 kernel: [    0.098126] jffs2: version 2.2. © 2001-2006 Red Hat, Inc.
+Jan  1 08:00:02 kernel: [    0.098594] msgmni has been set to 70
+Jan  1 08:00:02 kernel: [    0.100342] io scheduler noop registered
+Jan  1 08:00:02 kernel: [    0.100398] io scheduler cfq registered (default)
+Jan  1 08:00:02 kernel: [    0.103823] jz-uart.1: ttyS1 at MMIO 0x10031000 (irq = 58) is a uart1
+Jan  1 08:00:02 kernel: [    0.636544] console [ttyS1] enabled
+Jan  1 08:00:02 kernel: [    0.645782] brd: module loaded
+Jan  1 08:00:02 kernel: [    0.651790] loop: module loaded
+Jan  1 08:00:02 kernel: [    0.655908] zram: Created 2 device(s) ...
+Jan  1 08:00:02 kernel: [    0.660312] logger: created 256K log 'log_main'
+Jan  1 08:00:02 kernel: [    0.666051] jz SADC driver registeres over!
+Jan  1 08:00:02 kernel: [    0.672197] jz TCU driver register completed
+Jan  1 08:00:02 kernel: [    0.677156] the id code = ef4018, the flash name is WIN25Q128
+Jan  1 08:00:02 kernel: [    0.683126] JZ SFC Controller for SFC channel 0 driver register
+Jan  1 08:00:02 kernel: [    0.689326] 6 cmdlinepart partitions found on MTD device jz_sfc
+Jan  1 08:00:02 kernel: [    0.695470] Creating 6 MTD partitions on "jz_sfc":
+Jan  1 08:00:02 kernel: [    0.700465] 0x000000000000-0x000000040000 : "boot"
+Jan  1 08:00:02 kernel: [    0.706298] 0x000000040000-0x0000002c0000 : "kernel"
+Jan  1 08:00:02 kernel: [    0.712250] 0x0000002c0000-0x0000009b0000 : "rootfs"
+Jan  1 08:00:02 kernel: [    0.718215] 0x0000009b0000-0x000000fe0000 : "data"
+Jan  1 08:00:02 kernel: [    0.723908] 0x000000fe0000-0x000000ff0000 : "config"
+Jan  1 08:00:02 kernel: [    0.729923] 0x000000ff0000-0x000001000000 : "factory"
+Jan  1 08:00:02 kernel: [    0.735919] SPI NOR MTD LOAD OK
+Jan  1 08:00:02 kernel: [    0.739332] tun: Universal TUN/TAP device driver, 1.6
+Jan  1 08:00:02 kernel: [    0.744574] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+Jan  1 08:00:02 kernel: [    0.751256] wait stable.[246][cgu_macphy]
+Jan  1 08:00:02 kernel: [    0.755423] Bus Mode Reg after reset: 0x00020101, cnt=0
+Jan  1 08:00:02 kernel: [    0.761890] Bus Mode Reg after reset: 0x00020101, cnt=1
+Jan  1 08:00:02 kernel: [    0.768363] Bus Mode Reg after reset: 0x00020101, cnt=2
+Jan  1 08:00:02 kernel: [    0.774781] Bus Mode Reg after reset: 0x00020101, cnt=3
+Jan  1 08:00:02 kernel: [    0.781239] Bus Mode Reg after reset: 0x00020101, cnt=4
+Jan  1 08:00:02 kernel: [    0.787680] Bus Mode Reg after reset: 0x00020101, cnt=5
+Jan  1 08:00:02 kernel: [    0.794097] Bus Mode Reg after reset: 0x00020101, cnt=6
+Jan  1 08:00:02 kernel: [    0.800530] Bus Mode Reg after reset: 0x00020101, cnt=7
+Jan  1 08:00:02 kernel: [    0.806959] Bus Mode Reg after reset: 0x00020101, cnt=8
+Jan  1 08:00:02 kernel: [    0.813375] Bus Mode Reg after reset: 0x00020101, cnt=9
+Jan  1 08:00:02 kernel: [    0.819805] func:jz_mii_bus_probe, synopGMAC_reset failed
+Jan  1 08:00:02 kernel: [    0.825421] jz_mii_bus: probe of jz_mii_bus.0 failed with error -1
+Jan  1 08:00:02 kernel: [    0.831946] =======>gmacdev = 0x821ef000<================
+Jan  1 08:00:02 kernel: [    0.837576] =========>gmacdev->MacBase = 0xb34b0000 DmaBase = 0xb34b1000
+Jan  1 08:00:02 kernel: [    0.844530] Bus Mode Reg after reset: 0x00020101, cnt=0
+Jan  1 08:00:02 kernel: [    0.850961] Bus Mode Reg after reset: 0x00020101, cnt=1
+Jan  1 08:00:02 kernel: [    0.857393] Bus Mode Reg after reset: 0x00020101, cnt=2
+Jan  1 08:00:02 kernel: [    0.863809] Bus Mode Reg after reset: 0x00020101, cnt=3
+Jan  1 08:00:02 kernel: [    0.870239] Bus Mode Reg after reset: 0x00020101, cnt=4
+Jan  1 08:00:02 kernel: [    0.876655] Bus Mode Reg after reset: 0x00020101, cnt=5
+Jan  1 08:00:02 kernel: [    0.883085] Bus Mode Reg after reset: 0x00020101, cnt=6
+Jan  1 08:00:02 kernel: [    0.889513] Bus Mode Reg after reset: 0x00020101, cnt=7
+Jan  1 08:00:02 kernel: [    0.895929] Bus Mode Reg after reset: 0x00020101, cnt=8
+Jan  1 08:00:02 kernel: [    0.902357] Bus Mode Reg after reset: 0x00020101, cnt=9
+Jan  1 08:00:02 kernel: [    0.908785] func:jz_mac_probe, synopGMAC_reset failed
+Jan  1 08:00:02 kernel: [    0.914034] jz_mac: probe of jz_mac.0 failed with error -1
+Jan  1 08:00:02 kernel: [    0.920289] jzmmc_v1.2 jzmmc_v1.2.0: vmmc regulator missing
+Jan  1 08:00:02 kernel: [    0.926915] jzmmc_v1.2 jzmmc_v1.2.0: card inserted, state=0
+Jan  1 08:00:02 kernel: [    0.956906] jzmmc_v1.2 jzmmc_v1.2.0: register success!
+Jan  1 08:00:02 kernel: [    0.962314] jzmmc_v1.2 jzmmc_v1.2.1: vmmc regulator missing
+Jan  1 08:00:02 kernel: [    1.007016] jzmmc_v1.2 jzmmc_v1.2.1: register success!
+Jan  1 08:00:02 kernel: [    1.013021] TCP: cubic registered
+Jan  1 08:00:02 kernel: [    1.016471] NET: Registered protocol family 17
+Jan  1 08:00:02 kernel: [    1.023532] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+Jan  1 08:00:02 kernel: [    1.030929] drivers/rtc/hctosys.c: unable to open rtc device (rtc0)
+Jan  1 08:00:02 kernel: [    1.042926] VFS: Mounted root (squashfs filesystem) readonly on device 31:2.
+Jan  1 08:00:02 kernel: [    1.056050] devtmpfs: mounted
+Jan  1 08:00:02 kernel: [    1.059726] Freeing unused kernel memory: 224K (80448000 - 80480000)
+Jan  1 08:00:02 kernel: [    1.966124] mmc0: new high speed SDHC card at address 1234
+Jan  1 08:00:02 kernel: [    1.972284] mmcblk0: mmc0:1234 SA32G 28.8 GiB 
+Jan  1 08:00:02 kernel: [    1.978564]  mmcblk0: p1
+Jan  1 08:00:02 kernel: [    2.823716] FAT-fs (mmcblk0p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+Jan  1 08:00:02 fix_tz: sissylog: logging from stdin ...
+Jan  1 08:00:02 fix_tz: tzset()
+Jan  1 08:00:02 fix_tz:  tzname[0]: CST
+Jan  1 08:00:02 fix_tz:  tzname[1]: 
+Jan  1 08:00:02 fix_tz:  timezone:  -28800
+Jan  1 08:00:02 fix_tz:  daylight:  0
+Jan  1 08:00:02 fix_tz: gettimeofday(): OK
+Jan  1 08:00:02 fix_tz:  tv_sec:         2
+Jan  1 08:00:02 fix_tz:  tz_usec:        852737
+Jan  1 08:00:02 fix_tz:  tz_minuteswest: 0
+Jan  1 08:00:02 fix_tz:  tz_dsttime:     0
+Jan  1 08:00:02 fix_tz: NEW TZ: minuteswest=0 dsttime=0 (to avoid warp_clock())
+Jan  1 08:00:02 fix_tz: settimeofday(): OK
+Jan  1 08:00:02 fix_tz: NEW TZ: minuteswest=-480 dsttime=0
+Jan  1 08:00:02 fix_tz: settimeofday(): OK
+Jan  1 08:00:02 fix_tz: gettimeofday(): OK
+Jan  1 08:00:02 fix_tz:  tv_sec:         2
+Jan  1 08:00:02 fix_tz:  tz_usec:        852808
+Jan  1 08:00:02 fix_tz:  tz_minuteswest: -480
+Jan  1 08:00:02 fix_tz:  tz_dsttime:     0
+Jan  1 08:00:02 fix_tz: sissylog: terminating normally on eof reading stdin
+Jan  1 08:00:03 kernel: [    3.109394] zram0: detected capacity change from 0 to 8388608
+Jan  1 08:00:03 kernel: [    3.123177] Adding 8188k swap on /dev/zram0.  Priority:-1 extents:1 across:8188k SS
+Jan  1 08:00:03 kernel: [    3.232510] jz_pwm_probe[210] d_name = tcu_chn2
+Jan  1 08:00:03 kernel: [    3.274554] request pwm channel 2 successfully
+Jan  1 08:00:03 kernel: [    3.279926] pwm-jz pwm-jz: jz_pwm_probe register ok !
+Jan  1 08:00:03 kernel: [    3.442241] register all isp device successfully!
+Jan  1 08:00:03 kernel: [    3.447978] @@@@ tx-isp-probe ok @@@@@
+Jan  1 08:00:03 kernel: [    3.466560] jz_codec_register: probe() successful!
+Jan  1 08:00:03 kernel: [    3.472263] cgu_set_rate, parent = 712704000, rate = 2048000, n = 348, reg val = 0x0000215c
+Jan  1 08:00:03 kernel: [    3.472285] cgu_enable,cgu_i2s reg val = 0x2000215c
+Jan  1 08:00:03 kernel: [    3.817395] dma dma0chan24: Channel 24 have been requested.(phy id 7,type 0x06 desc a2752000)
+Jan  1 08:00:03 kernel: [    3.826761] dma dma0chan25: Channel 25 have been requested.(phy id 6,type 0x06 desc a2751000)
+Jan  1 08:00:03 kernel: [    3.883253] FAT-fs (mmcblk0p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+Jan  1 08:00:04 kernel: [    4.488268] RTL871X: module init start
+Jan  1 08:00:04 kernel: [    4.492170] RTL871X: rtl8189fs v4.3.24.10_24994.20171103
+Jan  1 08:00:04 kernel: [    4.498369] RTL871X: build time: Apr 15 2019 04:57:55
+Jan  1 08:00:04 kernel: [    4.503656] wlan power on
+Jan  1 08:00:04 kernel: [    4.517092] RTL871X: module init ret=0
+Jan  1 08:00:04 kernel: [    4.563172] mmc1: card claims to support voltages below the defined range. These will be ignored.
+Jan  1 08:00:04 kernel: [    4.596210] mmc1: new SDIO card at address 0001
+Jan  1 08:00:04 kernel: [    4.654432] RTL871X: HW EFUSE
+Jan  1 08:00:04 kernel: [    4.658136] RTL871X: wifi_mac file: /tmp/wifimac.txt
+Jan  1 08:00:04 kernel: [    4.663340] RTL871X: hal_com_config_channel_plan chplan:0x48
+Jan  1 08:00:04 kernel: [    4.777987] RTL871X: rtw_regsty_chk_target_tx_power_valid return _FALSE for band:0, path:0, rs:0, t:-1
+Jan  1 08:00:04 kernel: [    4.792819] RTL871X: rtw_ndev_init(wlan0) if1 mac_addr=5c:e5:0c:ab:fe:32
+Jan  1 08:00:04 perp: sissylog: logging from stdin ...
+Jan  1 08:00:04 perp: perpd[129]: starting on /etc/perp ...
+Jan  1 08:00:04 perp: perpd[129]: supervising 0 active services
+Jan  1 08:00:04 perp: perpd[129]: monitoring 0 client connections
+Jan  1 08:00:04 perp: perpd[129]: activated new service: mortox
+Jan  1 08:00:04 perp: perpd[129]: supervising 1 active service
+Jan  1 08:00:04 perp: start mortox
+Jan  1 08:00:04 mortoxd[132]: _mortox: init backend(mem) success.
+Jan  1 08:00:04 mortoxd[132]: _mortox: init backend(nvram) success.
+Jan  1 08:00:04 mortoxd[132]: _mortox: init layer(mem) end.
+Jan  1 08:00:05 mortoxd[132]: _mortox: init layer(nvram) end.
+Jan  1 08:00:05 mortoxd[132]: mortoxd: Create unix domain server /tmp/mortox.socket success.
+Jan  1 08:00:05 perp: perpd[129]: activated new service: fetch_av
+Jan  1 08:00:05 perp: perpd[129]: supervising 2 active services
+Jan  1 08:00:05 perp: perpd[129]: activated new service: miio_agent
+Jan  1 08:00:05 perp: perpd[129]: supervising 3 active services
+Jan  1 08:00:05 perp: perpd[129]: activated new service: miio_algo
+Jan  1 08:00:05 perp: perpd[129]: supervising 4 active services
+Jan  1 08:00:05 fetch_av: sissylog: logging from stdin ...
+Jan  1 08:00:05 miio_agent: sissylog: logging from stdin ...
+Jan  1 08:00:05 fetch_av: start fetch_av
+Jan  1 08:00:05 miio_agent: start miio_agent
+Jan  1 08:00:05 perp: start miio_algo
+Jan  1 08:00:05 perp: perpd[129]: activated new service: miio_client
+Jan  1 08:00:05 perp: perpd[129]: supervising 5 active services
+Jan  1 08:00:05 miio_agent: [19700101 08:00:05] [INFO] Set log level to: 2
+Jan  1 08:00:05 miio_agent: [19700101 08:00:05] [ERROR] Connect to server error: 127.0.0.1:54322
+Jan  1 08:00:05 miio_agent: [19700101 08:00:05] [ERROR] create socket error
+Jan  1 08:00:05 perp: start miio_client
+Jan  1 08:00:05 miio_agent: perp: miio_agent exited status 255
+Jan  1 08:00:05 perp: perpd[129]: activated new service: miio_client_helper
+Jan  1 08:00:05 perp: perpd[129]: supervising 6 active services
+Jan  1 08:00:05 miio_algo[152]: [miio_ipc_server_connect]connect error, errno=146^M
+Jan  1 08:00:05 perp: warning: perpd[129]: setting respawn governor on 'start' target of service miio_agent for ./rc.main
+Jan  1 08:00:05 perp: perpd[129]: activated new service: miio_cloud
+Jan  1 08:00:05 perp: perpd[129]: supervising 7 active services
+Jan  1 08:00:05 miio_client_helper: sissylog: logging from stdin ...
+Jan  1 08:00:05 miio_client_helper: start miio_client_helper
+Jan  1 08:00:05 perp: start miio_cloud
+Jan  1 08:00:05 perp: perpd[129]: activated new service: miio_devicekit
+Jan  1 08:00:05 perp: perpd[129]: supervising 8 active services
+Jan  1 08:00:05 miio_client_helper: {"method":"_internal.helper_ready"}
+Jan  1 08:00:05 perp: perpd[129]: activated new service: miio_nas
+Jan  1 08:00:05 perp: perpd[129]: supervising 9 active services
+Jan  1 08:00:05 perp: start miio_devicekit
+Jan  1 08:00:05 miio_client_helper: Connect to server error: 127.0.0.1:54322
+Jan  1 08:00:05 perp: start miio_nas
+Jan  1 08:00:05 perp: perpd[129]: activated new service: miio_ota
+Jan  1 08:00:05 perp: perpd[129]: supervising 10 active services
+Jan  1 08:00:05 perp: start miio_ota
+Jan  1 08:00:05 perp: perpd[129]: activated new service: miio_record
+Jan  1 08:00:05 perp: perpd[129]: supervising 11 active services
+Jan  1 08:00:05 perp: start miio_record
+Jan  1 08:00:05 perp: perpd[129]: activated new service: miio_sdcard
+Jan  1 08:00:05 perp: perpd[129]: supervising 12 active services
+Jan  1 08:00:05 perp: perpd[129]: activated new service: miio_stream
+Jan  1 08:00:05 perp: perpd[129]: supervising 13 active services
+Jan  1 08:00:05 perp: start miio_sdcard
+Jan  1 08:00:05 perp: start miio_stream
+Jan  1 08:00:05 perp: [19700101 08:00:05] [I] Set log level to: 2
+Jan  1 08:00:05 miio_algo[152]: [miio_ipc_server_connect]connect error, errno=146^M
+Jan  1 08:00:05 miio_devicekit[164]: device kit call
+Jan  1 08:00:05 miio_devicekit[164]: shbf_rcv_start fialed!
+Jan  1 08:00:05 miio_devicekit[164]: Fail to start sound player. retry after 1 sec!
+Jan  1 08:00:05 miio_devicekit[164]: Connect to otd error: 127.0.0.1:54320
+Jan  1 08:00:05 crond[182]: crond (busybox 1.28.1) started, log level 8
+Jan  1 08:00:06 miio_devicekit[164]: key: led_cmd, msg: null
+Jan  1 08:00:06 miio_devicekit[164]: key: motor_cmd, msg: null
+Jan  1 08:00:06 miio_devicekit[164]: key: dev_status, msg: null
+Jan  1 08:00:06 miio_devicekit[164]: key: track, msg: null
+Jan  1 08:00:06 miio_devicekit[164]: key: motor_reset, msg: null
+Jan  1 08:00:06 miio_devicekit[164]: key: sound_play, msg: null
+Jan  1 08:00:06 miio_devicekit[164]: key: motor, msg: null
+Jan  1 08:00:06 miio_devicekit[164]: motor default process
+Jan  1 08:00:06 miio_devicekit[164]: key: motion_detection_enable, msg: null
+Jan  1 08:00:06 miio_devicekit[164]: key: full_color, msg: null
+Jan  1 08:00:06 miio_devicekit[164]: key: watermark, msg: null
+Jan  1 08:00:06 miio_devicekit[164]: key: flip, msg: null
+Jan  1 08:00:06 miio_devicekit[164]: key: wdr, msg: null
+Jan  1 08:00:06 miio_devicekit[164]: key: sdcard_status, msg: null
+Jan  1 08:00:06 miio_devicekit[164]: key: motion_alarm, msg: null
+Jan  1 08:00:06 miio_devicekit[164]: key: track_switch, msg: null
+Jan  1 08:00:06 miio_devicekit[164]: key: detection_start, msg: null
+Jan  1 08:00:06 miio_devicekit[164]: key: detection_end, msg: null
+Jan  1 08:00:06 miio_devicekit[164]: key: time_night, msg: null
+Jan  1 08:00:06 miio_devicekit[164]: key: power, msg: null
+Jan  1 08:00:06 miio_devicekit[164]: power default process
+Jan  1 08:00:06 miio_agent: start miio_agent
+Jan  1 08:00:06 miio_agent: [19700101 08:00:06] [INFO] Set log level to: 2
+Jan  1 08:00:06 miio_agent: [19700101 08:00:06] [INFO] miot client fd: 3
+Jan  1 08:00:06 miio_agent: [19700101 08:00:06] [INFO] agent listen fd: 4
+Jan  1 08:00:06 miio_agent: [19700101 08:00:06] [INFO] timer fd: 5
+Jan  1 08:00:06 miio_agent: [19700101 08:00:06] [INFO] OT agent listen accept sockfd: 6
+Jan  1 08:00:06 miio_sdcard[175]: sdcard: mountpoint: Supported filesystems: vfat exfat
+Jan  1 08:00:06 miio_algo[152]: [miio_ipc_server_connect]connect error, errno=146^M
+Jan  1 08:00:06 miio_sdcard[175]: device: Successfully disable mdev.
+Jan  1 08:00:06 kernel: [    6.429359] FAT-fs (mmcblk0p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+Jan  1 08:00:06 miio_sdcard[175]: Open record msg...
+Jan  1 08:00:06 miio_sdcard[175]: The record msg load successfully
+Jan  1 08:00:06 miio_client_helper: Got _internal.request_dinfo
+Jan  1 08:00:06 miio_algo[152]: [miio_ipc_server_connect]connect error, errno=146^M
+Jan  1 08:00:06 miio_devicekit[164]: Retry connecting to miio_client...
+Jan  1 08:00:06 miio_agent: [19700101 08:00:06] [INFO] OT agent listen accept sockfd: 7
+Jan  1 08:00:06 miio_devicekit[164]: register_key(),keys_num is 24
+Jan  1 08:00:06 miio_devicekit[164]: Connected to miio_client.
+Jan  1 08:00:06 miio_devicekit[164]: OTD sockfd: 8
+Jan  1 08:00:06 miio_agent: [19700101 08:00:06] [INFO] register key: local.status, fd: 7
+Jan  1 08:00:06 miio_agent: [19700101 08:00:06] [INFO] register key: local.bind, fd: 7
+Jan  1 08:00:06 miio_agent: [19700101 08:00:06] [INFO] register key: miIO.restore, fd: 7
+Jan  1 08:00:06 miio_agent: [19700101 08:00:06] [INFO] register key: local.time, fd: 7
+Jan  1 08:00:06 miio_agent: [19700101 08:00:06] [INFO] register key: set_wdr, fd: 7
+Jan  1 08:00:06 miio_agent: [19700101 08:00:06] [INFO] register key: set_night_mode, fd: 7
+Jan  1 08:00:06 miio_agent: [19700101 08:00:06] [INFO] register key: restart_device, fd: 7
+Jan  1 08:00:06 miio_agent: [19700101 08:00:06] [INFO] register key: set_power, fd: 7
+Jan  1 08:00:06 miio_agent: [19700101 08:00:06] [INFO] register key: set_flip, fd: 7
+Jan  1 08:00:06 miio_agent: [19700101 08:00:06] [INFO] register key: set_watermark, fd: 7
+Jan  1 08:00:06 miio_agent: [19700101 08:00:06] [INFO] register key: set_light, fd: 7
+Jan  1 08:00:06 miio_agent: [19700101 08:00:06] [INFO] register key: set_improve_program, fd: 7
+Jan  1 08:00:07 miio_agent: [19700101 08:00:06] [INFO] register key: get_prop, fd: 7
+Jan  1 08:00:07 miio_agent: [19700101 08:00:07] [INFO] register key: set_motion_region, fd: 7
+Jan  1 08:00:07 miio_agent: [19700101 08:00:07] [INFO] register key: get_motion_region, fd: 7
+Jan  1 08:00:07 miio_agent: [19700101 08:00:07] [INFO] register key: set_motion_detection_enable, fd: 7
+Jan  1 08:00:07 miio_agent: [19700101 08:00:07] [INFO] register key: set_full_color, fd: 7
+Jan  1 08:00:07 miio_agent: [19700101 08:00:07] [INFO] register key: set_motor, fd: 7
+Jan  1 08:00:07 miio_agent: [19700101 08:00:07] [INFO] register key: update_log, fd: 7
+Jan  1 08:00:07 miio_agent: [19700101 08:00:07] [INFO] register key: aec_auth, fd: 7
+Jan  1 08:00:07 miio_agent: [19700101 08:00:07] [INFO] register key: miIO.config_loglevel, fd: 7
+Jan  1 08:00:07 miio_agent: [19700101 08:00:07] [INFO] register key: set_motion_record, fd: 7
+Jan  1 08:00:07 miio_agent: [19700101 08:00:07] [INFO] register key: getAlarmConfig, fd: 7
+Jan  1 08:00:07 miio_agent: [19700101 08:00:07] [INFO] register key: setAlarmConfig, fd: 7
+Jan  1 08:00:07 miio_agent: [19700101 08:00:07] [INFO] U:new id:1, old_id:828662, fd:7: len: 52
+Jan  1 08:00:07 miio_agent: [19700101 08:00:07] [INFO] S:cmd,fd:7, len:55
+Jan  1 08:00:07 miio_agent: [19700101 08:00:07] [INFO] OT agent listen accept sockfd: 8
+Jan  1 08:00:07 miio_client_helper: 314457527
+Jan  1 08:00:07 miio_client_helper: xiaomi
+Jan  1 08:00:07 miio_client_helper: 5C:E5:0C:AB:FE:32
+Jan  1 08:00:07 miio_client_helper: mijia.camera.v3
+Jan  1 08:00:07 nas[167]: Config loaded.
+Jan  1 08:00:07 miio_agent: [19700101 08:00:07] [INFO] register key: nas_scan, fd: 8
+Jan  1 08:00:07 miio_agent: [19700101 08:00:07] [INFO] register key: nas_set_config, fd: 8
+Jan  1 08:00:07 miio_agent: [19700101 08:00:07] [INFO] register key: nas_get_config, fd: 8
+Jan  1 08:00:07 miio_agent: [19700101 08:00:07] [INFO] register key: nas_list_dir, fd: 8
+Jan  1 08:00:07 miio_agent: [19700101 08:00:07] [INFO] register key: nas_sync_start, fd: 8
+Jan  1 08:00:07 miio_agent: [19700101 08:00:07] [INFO] register key: nas_sync_stop, fd: 8
+Jan  1 08:00:07 miio_agent: [19700101 08:00:07] [INFO] register key: nas_exit, fd: 8
+Jan  1 08:00:07 miio_agent: [19700101 08:00:07] [INFO] register key: nas_clear_dir, fd: 8
+Jan  1 08:00:07 miio_agent: [19700101 08:00:07] [INFO] register key: nas_reset, fd: 8
+Jan  1 08:00:07 perp: nvram_init: done
+Jan  1 08:00:07 miio_client_helper: Got _internal.request_dtoken
+Jan  1 08:00:07 miio_algo[152]: [miio_ipc_server_connect]connect error, errno=146^M
+Jan  1 08:00:07 miio_client_helper: response offline_time: 0
+Jan  1 08:00:07 miio_client_helper: response offline_reason: 0
+Jan  1 08:00:07 miio_client_helper: {"method":"_internal.response_dcountry","params":""}
+Jan  1 08:00:07 miio_client_helper: {"method":"_internal.response_offline","params":{"offline_time":0,"offline_reason":0,"improve_program":1,"offline_ip":0,"offline_port":0}}
+Jan  1 08:00:07 miio_client_helper: Got _internal.req_wifi_conf_status
+Jan  1 08:00:07 miio_client_helper: {"method":"_internal.res_wifi_conf_status","params":1}
+Jan  1 08:00:07 miio_algo[152]: [miio_ipc_server_connect]connect error, errno=146^M
+Jan  1 08:00:07 miio_devicekit[164]: Retry connecting to sound shbf...
+Jan  1 08:00:07 miio_devicekit[164]: shbf_rcv_start fialed!
+Jan  1 08:00:08 miio_agent: [19700101 08:00:08] [INFO] OT agent listen accept sockfd: 9
+Jan  1 08:00:08 miio_sdcard[175]: statistics rpc msg: {"id":695763966,"method":"_async.stat","params":{"sdcard.info":{"state":0,"mmc":{"cid":"02544d5341333247503141b06c013a3f","csd":"400e00325b590000e6cf7f800a40003f","scr":"0235804301000000","date":"1
+Jan  1 08:00:08 miio_agent: [19700101 08:00:08] [INFO] U:new id:2, old_id:695763966, fd:9: len: 699
+Jan  1 08:00:08 miio_agent: [19700101 08:00:08] [ERROR] sockfd :9 occurs error, delete from agent
+Jan  1 08:00:08 miio_agent: [19700101 08:00:08] [INFO] delete_fd_from_agent(), sockfd: 9, i: 6
+Jan  1 08:00:08 miio_sdcard[175]: Rename tf_recovery.img: No such file or directory
+Jan  1 08:00:08 miio_agent: [19700101 08:00:08] [INFO] register key: deleteVideo, fd: 6
+Jan  1 08:00:08 miio_agent: [19700101 08:00:08] [INFO] register key: deleteSaveVideo, fd: 6
+Jan  1 08:00:08 miio_agent: [19700101 08:00:08] [INFO] register key: saveVideo, fd: 6
+Jan  1 08:00:08 miio_agent: [19700101 08:00:08] [INFO] register key: sd_storge, fd: 6
+Jan  1 08:00:08 miio_agent: [19700101 08:00:08] [INFO] register key: sd_format, fd: 6
+Jan  1 08:00:08 miio_agent: [19700101 08:00:08] [INFO] register key: sd_umount, fd: 6
+Jan  1 08:00:08 miio_algo[152]: [miio_ipc_server_connect]connect error, errno=146^M
+Jan  1 08:00:08 fetch_av[146]: Get faild.
+Jan  1 08:00:08 fetch_av[146]: Get faild.
+Jan  1 08:00:08 fetch_av[146]: Get faild.
+Jan  1 08:00:08 fetch_av[146]: Get faild.
+Jan  1 08:00:08 fetch_av[146]: device tatus is {1,1,1,0.0}
+Jan  1 08:00:08 fetch_av[146]: Ingenic_system_init start
+Jan  1 08:00:08 kernel: [    8.593660] set sensor gpio as PA-low-10bit
+Jan  1 08:00:08 kernel: [    8.598894] @@@@@@@probe ok ------->ps5250
+Jan  1 08:00:08 kernel: [    8.634914] -----ps5250_detect: 1139 ret = 0, v = 0x52
+Jan  1 08:00:08 kernel: [    8.635336] -----ps5250_detect: 1149 ret = 0, v = 0x50
+Jan  1 08:00:08 kernel: [    8.635354] ps5250 0-0048: ps5250 chip found @ 0x48 (i2c0)
+Jan  1 08:00:08 kernel: [    8.647050] tx_isp: Registered sensor subdevice ps5250 0-0048
+Jan  1 08:00:08 miio_algo[152]: [miio_ipc_server_connect]connect error, errno=146^M
+Jan  1 08:00:08 miio_record[172]: miio_record start.
+Jan  1 08:00:08 miio_devicekit[164]: Retry connecting to sound shbf...
+Jan  1 08:00:08 miio_devicekit[164]: shbf_rcv_start fialed!
+Jan  1 08:00:09 miio_ota[170]: miio ota start
+Jan  1 08:00:09 miio_ota[170]: /mnt/data/bin/pre-ota.sh will run before ota
+Jan  1 08:00:09 miio_ota[170]: /mnt/data/bin/post-ota.sh will run after ota
+Jan  1 08:00:09 miio_cloud[162]: miio_cloud start.
+Jan  1 08:00:09 miio_agent: [19700101 08:00:09] [INFO] OT agent listen accept sockfd: 9
+Jan  1 08:00:09 miio_agent: [19700101 08:00:09] [INFO] register key: motionDetectionSwitch, fd: 9
+Jan  1 08:00:09 miio_agent: [19700101 08:00:09] [INFO] register key: cloudSwitch, fd: 9
+Jan  1 08:00:09 miio_agent: [19700101 08:00:09] [INFO] register key: detectionSensitive, fd: 9
+Jan  1 08:00:09 miio_agent: [19700101 08:00:09] [INFO] register key: upload_video, fd: 9
+Jan  1 08:00:09 kernel: [    9.086984] ps5250 stream on
+Jan  1 08:00:09 miio_stream[177]: miio_stream p2p uid: 916NG2U7RN7CZ1H3111A
+Jan  1 08:00:09 kernel: [    9.244935] ###### image_tuning_v4l2_open 4329 #######
+Jan  1 08:00:09 fetch_av[146]: ImpSystemInit success
+Jan  1 08:00:09 fetch_av: i264e[info]: profile Main, level 4.0
+Jan  1 08:00:09 miio_algo[152]: [miio_ipc_server_connect]connect error, errno=146^M
+Jan  1 08:00:09 fetch_av: i264e[info]: profile Main, level 2.2
+Jan  1 08:00:09 fetch_av[146]: Ingenic_stream_init success
+Jan  1 08:00:09 kernel: [    9.459125] &&& chan1  scaler.max_width = 1920 max_height = 1080  min_width = 128 min_height = 128 &&&
+Jan  1 08:00:09 miio_ota[170]: OTD libmortox sockfd: 4
+Jan  1 08:00:09 miio_agent: [19700101 08:00:09] [INFO] OT agent listen accept sockfd: 10
+Jan  1 08:00:09 miio_agent: [19700101 08:00:09] [INFO] register key: miIO.ota, fd: 10
+Jan  1 08:00:09 miio_ota[170]: OTD sockfd: 5
+Jan  1 08:00:09 kernel: [    9.499630] &&& chan2  scaler.max_width = 800 max_height = 800  min_width = 128 min_height = 128 &&&
+Jan  1 08:00:09 kernel: [    9.513854] info: drop frame cnt = 1
+Jan  1 08:00:09 kernel: [    9.564082] info: drop frame cnt = 0
+Jan  1 08:00:09 fetch_av[146]: Audio In GetPubAttr samplerate : 8000
+Jan  1 08:00:09 fetch_av[146]: Audio In GetPubAttr   bitwidth : 16
+Jan  1 08:00:09 fetch_av[146]: Audio In GetPubAttr  soundmode : 1
+Jan  1 08:00:09 fetch_av[146]: Audio In GetPubAttr     frmNum : 40
+Jan  1 08:00:09 fetch_av[146]: Audio In GetPubAttr  numPerFrm : 320
+Jan  1 08:00:09 fetch_av[146]: Audio In GetPubAttr     chnCnt : 1
+Jan  1 08:00:09 kernel: [    9.594726] codec_codec_ctl: set sample rate...
+Jan  1 08:00:09 kernel: [    9.595286] codec_codec_ctl: set device...
+Jan  1 08:00:09 miio_stream[177]: IOTCAPI version[3.0.1.50] AVAPI version[3.0.1.50]
+Jan  1 08:00:09 kernel: [    9.613782] info: drop frame cnt = 1
+Jan  1 08:00:09 miio_agent: [19700101 08:00:09] [INFO] OT agent listen accept sockfd: 11
+Jan  1 08:00:09 miio_agent: [19700101 08:00:09] [INFO] register key: miIO.event, fd: 11
+Jan  1 08:00:09 miio_agent: [19700101 08:00:09] [INFO] U:new id:3, old_id:7501777, fd:11: len: 232
+Jan  1 08:00:09 perp: timer_setup is deprecated.
+Jan  1 08:00:09 perp: timer_setup is deprecated.
+Jan  1 08:00:09 miio_stream[177]: begin IOTC_Listen time: 9
+Jan  1 08:00:09 miio_stream[177]: thread_Login(), get local ip retry: 0
+Jan  1 08:00:09 kernel: [    9.714890] info: drop frame cnt = 0
+Jan  1 08:00:09 miio_algo[152]: [miio_ipc_server_connect]connect error, errno=146^M
+Jan  1 08:00:09 miio_devicekit[164]: Retry connecting to sound shbf...
+Jan  1 08:00:09 miio_devicekit[164]: shbf_rcv_start fialed!
+Jan  1 08:00:09 fetch_av[146]: Audio In GetChnParam usrFrmDepth : 40
+Jan  1 08:00:09 kernel: [    9.986964] codec_set_device: set device: MIC...
+Jan  1 08:00:09 fetch_av[146]: Audio In GetVol    vol : 60
+Jan  1 08:00:09 fetch_av[146]: Audio In GetGain    gain : 22
+Jan  1 08:00:09 fetch_av[146]: Audio Out GetPubAttr samplerate:8000
+Jan  1 08:00:09 fetch_av[146]: Audio Out GetPubAttr   bitwidth:16
+Jan  1 08:00:09 fetch_av[146]: Audio Out GetPubAttr  soundmode:1
+Jan  1 08:00:09 fetch_av[146]: Audio Out GetPubAttr     frmNum:2
+Jan  1 08:00:09 fetch_av[146]: Audio Out GetPubAttr  numPerFrm:1280
+Jan  1 08:00:09 fetch_av[146]: Audio Out GetPubAttr     chnCnt:1
+Jan  1 08:00:10 kernel: [   10.003936] codec_codec_ctl: set repaly channel...
+Jan  1 08:00:10 kernel: [   10.003971] codec_codec_ctl: set sample rate...
+Jan  1 08:00:10 kernel: [   10.004272] codec_codec_ctl: set device...
+Jan  1 08:00:10 miio_stream[177]: 0 receiver closed!time: 10
+Jan  1 08:00:10 miio_stream[177]: 3 receiver closed!time: 10
+Jan  1 08:00:10 miio_stream[177]: 4 receiver closed!time: 10
+Jan  1 08:00:10 miio_stream[177]: 1 receiver closed!time: 10
+Jan  1 08:00:10 kernel: [   10.236898] codec_set_device: set device: speaker...
+Jan  1 08:00:10 fetch_av[146]: Audio Out GetVol    vol:62
+Jan  1 08:00:10 fetch_av[146]: Audio Out GetGain    gain : 24
+Jan  1 08:00:10 fetch_av[146]: main(),232
+Jan  1 08:00:10 fetch_av[146]: start_video_thread(), ret is 0
+Jan  1 08:00:10 fetch_av[146]: start_video_thread(), ret is 0
+Jan  1 08:00:10 fetch_av[146]: start_audio_thread(), ret is 0
+Jan  1 08:00:10 fetch_av[146]: start_audio_thread(), ret is 0
+Jan  1 08:00:10 fetch_av[146]: start_osd_thread(), ret is 0
+Jan  1 08:00:10 fetch_av[146]: video_tid is =[1961276656, 1961014512]
+Jan  1 08:00:10 fetch_av[146]: audio_tid is =[1960752368,1960490224]
+Jan  1 08:00:10 fetch_av[146]: ipc_tid is =[1961538800]
+Jan  1 08:00:10 fetch_av[146]: osd_tid is =[1960228080]
+Jan  1 08:00:10 fetch_av[146]: fetch_aduio_thread(), 194, shbfev_alloc
+Jan  1 08:00:10 fetch_av[146]: shbf_index is : 1, shbf_size is 131072 
+Jan  1 08:00:10 fetch_av[146]: video_stream_thread(), 96, shbfev_alloc
+Jan  1 08:00:10 fetch_av[146]: shbf_index is : 0, shbf_size is 261120 
+Jan  1 08:00:10 fetch_av[146]: video_stream_thread(), 96, shbfev_alloc
+Jan  1 08:00:10 fetch_av[146]: start mainloop,ev_backend is 4
+Jan  1 08:00:10 fetch_av[146]: Notify: nvram:default:bind_status
+Jan  1 08:00:10 fetch_av[146]: bind_status_cb(),[ok]
+Jan  1 08:00:10 fetch_av[146]: Notify: nvram:default:power
+Jan  1 08:00:10 fetch_av[146]: Notify: nvram:default:watermark
+Jan  1 08:00:10 fetch_av[146]: Notify: nvram:default:flip
+Jan  1 08:00:10 fetch_av[146]: Notify: nvram:default:wdr
+Jan  1 08:00:10 fetch_av[146]: Notify: nvram:default:regioncode
+Jan  1 08:00:10 fetch_av[146]: regioncode_cb(),[CN]
+Jan  1 08:00:10 fetch_av[146]: video_stream_thread(),video chn 0, fps: 3145.090906
+Jan  1 08:00:10 fetch_av[146]: video_stream_thread(),video chn 1, fps: 2492.149728
+Jan  1 08:00:10 fetch_av[146]: fetch_aduio_thread(), fps: 1352.415922
+Jan  1 08:00:10 fetch_av[146]: client 33 connected,total 1 clients.
+Jan  1 08:00:10 perp: meta_list_data size = 64, buf size = 518592?
+Jan  1 08:00:10 perp: queue_list_elem size = 64, queue multi size = 518784?
+Jan  1 08:00:10 fetch_av[146]: broadcaster 2 get new receiver: 34, total count 1
+Jan  1 08:00:10 miio_algo[152]: INGENIC_RAWCAP_INIT
+Jan  1 08:00:10 miio_algo[152]: [notify_cb_motion_region]motion_region length = 65
+Jan  1 08:00:10 miio_algo[152]: [notify_cb_motion_region]motion_area_update
+Jan  1 08:00:10 miio_algo[152]: motion_region=[
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: ]
+Jan  1 08:00:10 miio_algo[152]: [ircut_mode_switch] ircut not inited
+Jan  1 08:00:10 miio_algo[152]: [notify_cb_fullcolor]^M
+Jan  1 08:00:10 miio_algo[152]: [notify_cb_fullcolor] key or value is null
+Jan  1 08:00:10 miio_algo[152]: [notify_cb_wdr_mode] key or value is null
+Jan  1 08:00:10 miio_algo[152]: [notify_cb_track_mode] key or value is null
+Jan  1 08:00:10 miio_algo[152]: [notify_cb_power_mode] key or value is null
+Jan  1 08:00:10 miio_algo[152]: [notify_cb_power_mode] init ircut and motion
+Jan  1 08:00:10 miio_algo[152]: [sync_cb_motion_region] motion_region = [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]
+Jan  1 08:00:10 miio_algo[152]: [sync_cb_motion_region] motion_region length = 65
+Jan  1 08:00:10 miio_algo[152]: [sync_cb_motion_region] motion_area_update
+Jan  1 08:00:10 miio_algo[152]: [sync_cb_motion_region] motion_region=[
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: 2,
+Jan  1 08:00:10 miio_algo[152]: ]
+Jan  1 08:00:10 miio_algo[152]: [sync_cb_wdr_mode] get faild: set wdr mode off
+Jan  1 08:00:10 miio_algo[152]: [sync_cb_night_mode] night_mode = 0
+Jan  1 08:00:10 miio_algo[152]: [sync_cb_fullcolor] get faild: set fullcolor on
+Jan  1 08:00:10 miio_algo[152]: [sync_cb_track_mode] get faild: set track mode off
+Jan  1 08:00:10 miio_algo[152]: [ircut_config_init] MIIO_ALGO_INGENIC
+Jan  1 08:00:10 miio_algo[152]: [ircut_init]switch to ircut mode auto
+Jan  1 08:00:10 miio_algo[152]: [ircut_init]force day
+Jan  1 08:00:10 miio_algo[152]: [_infrared_drv]pwm_duty(0)
+Jan  1 08:00:10 fetch_av[146]: Ingenic_control_ircut():attr = (50000, 100, 0), param is 0, pwm_enable is 0
+Jan  1 08:00:10 fetch_av[146]: isp_dnmode_thread():{dn_mode, mortor_run}{0,0}
+Jan  1 08:00:10 fetch_av[146]: Ingenic_set_isp_dnmode():fps is 20, param is 0
+Jan  1 08:00:10 miio_algo[152]: [ircut_init]create ircut task...
+Jan  1 08:00:10 perp: [motion_algo_init_c] width = 320?
+Jan  1 08:00:10 perp: [motion_algo_init_c] height = 180?
+Jan  1 08:00:10 perp: [motion_algo_init_c] frame size = 57600?
+Jan  1 08:00:10 perp: [motion_algo_init_c] grid num = 384?
+Jan  1 08:00:10 perp: [motion_algo_init_c] grid width = 10?
+Jan  1 08:00:10 perp: [motion_algo_init_c] grid height = 15?
+Jan  1 08:00:10 perp: [motion_algo_init_c] MI ALGO INIT SUCCESS, VERSION 20180125?
+Jan  1 08:00:10 miio_algo[152]: [ingenic_ircut_ctrl] u32ExposureTime: 104244
+Jan  1 08:00:10 miio_algo[152]: [ingenic_ircut_ctrl] u32AnalogGain: 29
+Jan  1 08:00:10 miio_algo[152]: [ingenic_ircut_ctrl] u32DGain: 3
+Jan  1 08:00:10 miio_algo[152]: [ingenic_ircut_ctrl] gb_gain: 239.000000
+Jan  1 08:00:10 miio_algo[152]: [ingenic_ircut_ctrl] gr_gain: 243.000000
+Jan  1 08:00:10 miio_algo[152]: [ingenic_ircut_ctrl] gr_gain_record: 200.000000
+Jan  1 08:00:10 miio_algo[152]: [ingenic_ircut_ctrl] gb_gain_record: 200.000000
+Jan  1 08:00:10 miio_devicekit[164]: Retry connecting to sound shbf...
+Jan  1 08:00:10 fetch_av[146]: broadcaster 5 get new receiver: 35, total count 1
+Jan  1 08:00:10 miio_devicekit[164]: Connected to sound shbf.
+Jan  1 08:00:10 miio_devicekit[164]: sound sockfd: 9
+Jan  1 08:00:10 miio_devicekit[164]: sound_play msg error: ready
+Jan  1 08:00:11 miio_stream[177]: 1 receiver closed!time: 11
+Jan  1 08:00:11 fetch_av[146]: broadcaster 1 get new receiver: 36, total count 1
+Jan  1 08:00:11 miio_stream[177]: stream start: 1,  main/sub/audio stream reconn times:[ 0/1/0],  time: 11
+Jan  1 08:00:11 miio_stream[177]: 3 receiver closed!time: 11
+Jan  1 08:00:11 fetch_av[146]: broadcaster 4 get new receiver: 37, total count 1
+Jan  1 08:00:11 miio_stream[177]: stream start: 3,  main/sub/audio stream reconn times:[ 0/1/0],  time: 11
+Jan  1 08:00:11 miio_stream[177]: 0 receiver closed!time: 11
+Jan  1 08:00:11 fetch_av[146]: broadcaster 0 get new receiver: 38, total count 1
+Jan  1 08:00:11 miio_stream[177]: stream start: 0,  main/sub/audio stream reconn times:[ 1/1/0],  time: 11
+Jan  1 08:00:11 miio_stream[177]: 4 receiver closed!time: 11
+Jan  1 08:00:11 fetch_av[146]: broadcaster 5 get new receiver: 39, total count 2
+Jan  1 08:00:11 miio_stream[177]: stream start: 4,  main/sub/audio stream reconn times:[ 1/1/0],  time: 11
+Jan  1 08:00:11 udhcpc[275]: started, v1.28.1
+Jan  1 08:00:12 udhcpc[275]: sending discover
+Jan  1 08:00:12 kernel: [   12.554931] RTL871X: rtw_set_802_11_connect(wlan0)  fw_state=0x00000008
+Jan  1 08:00:12 kernel: [   12.656456] RTL871X: start auth
+Jan  1 08:00:12 kernel: [   12.675678] RTL871X: auth success, start assoc
+Jan  1 08:00:12 kernel: [   12.700326] RTL871X: assoc success
+Jan  1 08:00:12 kernel: [   12.704698] cfg80211: Calling CRDA for country: CN
+Jan  1 08:00:12 kernel: [   12.735778] cfg80211: Regulatory domain changed to country: CN
+Jan  1 08:00:12 kernel: [   12.752091] cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
+Jan  1 08:00:12 kernel: [   12.796717] cfg80211:   (2402000 KHz - 2482000 KHz @ 40000 KHz), (2000 mBi, 0 mBm)
+Jan  1 08:00:12 kernel: [   12.805758] cfg80211:   (5170000 KHz - 5250000 KHz @ 80000 KHz), (2300 mBi, 0 mBm)
+Jan  1 08:00:12 kernel: [   12.819036] cfg80211:   (5250000 KHz - 5330000 KHz @ 80000 KHz), (2300 mBi, 0 mBm)
+Jan  1 08:00:12 kernel: [   12.827932] RTL871X: recv eapol packet
+Jan  1 08:00:12 kernel: [   12.833286] cfg80211:   (5735000 KHz - 5835000 KHz @ 80000 KHz), (3000 mBi, 0 mBm)
+Jan  1 08:00:12 kernel: [   12.841956] cfg80211:   (57240000 KHz - 59400000 KHz @ 2160000 KHz), (2800 mBi, 0 mBm)
+Jan  1 08:00:12 kernel: [   12.850699] cfg80211:   (59400000 KHz - 63720000 KHz @ 2160000 KHz), (4400 mBi, 0 mBm)
+Jan  1 08:00:12 kernel: [   12.859450] cfg80211:   (63720000 KHz - 65880000 KHz @ 2160000 KHz), (2800 mBi, 0 mBm)
+Jan  1 08:00:13 kernel: [   13.100457] RTL871X: send eapol packet
+Jan  1 08:00:13 kernel: [   13.110670] RTL871X: recv eapol packet
+Jan  1 08:00:13 kernel: [   13.441805] RTL871X: send eapol packet
+Jan  1 08:00:13 kernel: [   13.459710] RTL871X: set pairwise key camid:4, addr:20:76:93:4a:ca:8e, kid:0, type:AES
+Jan  1 08:00:13 kernel: [   13.500810] RTL871X: set group key camid:5, addr:20:76:93:4a:ca:8e, kid:1, type:AES
+Jan  1 08:00:13 udhcpc[275]: performing DHCP renew
+Jan  1 08:00:13 udhcpc[275]: sending discover
+Jan  1 08:00:13 udhcpc[275]: sending select for 192.168.99.104
+Jan  1 08:00:13 udhcpc[275]: lease of 192.168.99.104 obtained, lease time 43200
+Jan  1 08:00:14 miio_stream[177]: thread_Login(), get local ip done.
+Jan  1 08:00:14 miio_agent: [19700101 08:00:14] [INFO] U:new id:4, old_id:3026363, fd:11: len: 232
+Jan  1 08:00:15 miio_stream[177]: [LOGIN INFO]I can be connected via Internet
+Jan  1 08:00:16 miio_stream[177]: IOTC_Device_Login() ret = 0
+Jan  1 08:00:16 miio_stream[177]: [LOGIN INFO]login to server succeed!
+Jan  1 08:00:16 miio_agent: [19700101 08:00:16] [INFO] U:new id:5, old_id:3795424, fd:7: len: 50
+Jan  1 08:00:16 miio_agent: [19700101 08:00:16] [INFO] S:cmd,fd:7, len:42
+Jan  1 08:00:16 miio_devicekit[164]: Ignore system time: Thu Jan  1 08:00:16 1970
+Jan  1 08:00:17 miio_devicekit[164]: ERROR: your priority (1) lower than led_owner (2)
+Jan  1 08:00:17 miio_devicekit[164]: ERROR: your priority (1) lower than led_owner (2)
+Jan  1 08:00:17 miio_agent: [19700101 08:00:17] [INFO] S:cmd,fd:7, len:58
+Jan  1 08:00:18 miio_client_helper: ifname: wlan0
+Jan  1 08:00:18 miio_client_helper: ssid: sincoder
+Jan  1 08:00:18 miio_client_helper: bssid: 20:76:93:4A:CA:8E
+Jan  1 08:00:18 miio_client_helper: freq: 2447
+Jan  1 08:00:18 miio_client_helper: -44
+Jan  1 08:00:18 miio_client_helper: ip: 192.168.99.104
+Jan  1 08:00:18 miio_client_helper: netmask: 255.255.255.0
+Jan  1 08:00:18 miio_client_helper: gw: 192.168.99.1
+Jan  1 08:00:18 miio_client_helper: {"method":"_internal.info","partner_id":"","params":{"hw_ver":"Linux","fw_ver":"3.5.1_0066","ap":{ "ssid":"sincoder","bssid":"20:76:93:4A:CA:8E","rssi":"-44","freq":2447},"netif":{ "localIp":"192.168.99.104","mask":
+Jan  1 08:00:18 miio_client_helper: Got _internal.record_offline_time
+Jan  1 08:00:18 miio_agent: [19700101 08:00:18] [INFO] S:cmd,fd:7, len:55
+Jan  1 08:00:18 miio_client_helper: offline_time is 0
+Jan  1 08:00:18 miio_client_helper: offline_reason is 0
+Jan  1 08:00:18 miio_client_helper: offline_ip is 0
+Jan  1 08:00:18 miio_client_helper: offline_port is 0
+Jan  1 08:00:19 miio_agent: [19700101 08:00:19] [INFO] U:new id:6, old_id:7503815, fd:11: len: 232
+Jan  1 08:00:19 miio_agent: [19700101 08:00:19] [INFO] S:ACK, new_id:6, old_id:7503815, fd:11,length: 28
+Jan  1 08:00:19 miio_stream[177]: otd_recv_handler_block(), sockfd: 10, msg: {"result":"ok","id":7503815}, length: 28 bytes
+Jan  1 08:00:19 miio_stream[177]: msg_dispatcher, msg: {"result":"ok","id":7503815}, strlen: 28, len: 28
+Jan  1 08:00:32 miio_agent: [19700101 08:00:32] [INFO] U:new id:7, old_id:1598493, fd:7: len: 50
+Jan  1 08:00:32 miio_agent: [19700101 08:00:32] [INFO] S:cmd,fd:7, len:50
+Aug 30 12:40:50 miio_devicekit[164]: Set system time success: Mon Aug 30 12:40:50 2021
+Aug 30 12:40:50 miio_cloud[162]: cloud thread start.
+Aug 30 12:40:50 fetch_av[146]: broadcaster 0 get new receiver: 40, total count 2
+Aug 30 12:40:50 fetch_av[146]: broadcaster 1 get new receiver: 41, total count 2
+Aug 30 12:40:50 miio_cloud[162]: CloudSecurity thread start~
+Aug 30 12:40:50 fetch_av[146]: broadcaster 4 get new receiver: 42, total count 2
+Aug 30 12:40:50 miio_cloud[162]: Get miio_token is empty.
+Aug 30 12:40:50 miio_cloud[162]: waiting upload url, try:0!
+Aug 30 12:40:50 fetch_av[146]: broadcaster 3 get new receiver: 43, total count 1
+Aug 30 12:40:51 fetch_av[146]: broadcaster 0 get new receiver: 44, total count 3
+Aug 30 12:40:51 fetch_av[146]: broadcaster 4 get new receiver: 45, total count 3
+Aug 30 12:40:51 fetch_av[146]: broadcaster 3 get new receiver: 46, total count 2
+Aug 30 12:40:51 miio_record[172]: record thread start.
+Aug 30 12:40:51 miio_cloud[162]: waiting upload url, try:1!
+Aug 30 12:40:51 miio_cloud[162]: waiting http domain url 1, login_cnt: 1
+Aug 30 12:40:52 miio_cloud[162]: waiting upload url, try:2!
+Aug 30 12:40:52 miio_cloud[162]: waiting http domain url 2, login_cnt: 1
+Aug 30 12:40:53 miio_cloud[162]: waiting upload url, try:3!
+Aug 30 12:40:53 miio_cloud[162]: waiting http domain url 3, login_cnt: 1
+Aug 30 12:40:54 miio_cloud[162]: waiting upload url, try:4!
+Aug 30 12:40:54 miio_cloud[162]: waiting http domain url 4, login_cnt: 1
+Aug 30 12:40:55 miio_cloud[162]: waiting upload url, try:5!
+Aug 30 12:40:55 miio_cloud[162]: waiting http domain url 5, login_cnt: 1
+Aug 30 12:40:55 miio_cloud[162]: MemTotal:36080  MemFree:1420  MemAvailable:6456  Buffers:7572 Cached:128
+Aug 30 12:40:55 miio_agent: [20210830 12:40:55] [INFO] U:new id:8, old_id:6069306, fd:9: len: 101
+Aug 30 12:40:55 miio_agent: [20210830 12:40:55] [INFO] S:ACK, new_id:8, old_id:6069306, fd:9,length: 448
+Aug 30 12:40:56 miio_cloud[162]: waiting upload url, try:6!
+Aug 30 12:40:56 miio_cloud[162]: ##########get domain url is ok###########
+Aug 30 12:40:56 miio_cloud[162]: http domain url:  https://business.smartcamera.api.io.mi.com
+Aug 30 12:40:57 miio_cloud[162]: waiting upload url, try:7!
+Aug 30 12:40:58 miio_cloud[162]: waiting upload url, try:8!
+Aug 30 12:40:59 miio_algo[152]: [key=track_switch][value=off]^M
+Aug 30 12:40:59 miio_cloud[162]: http_cloud_update_status Success!
+Aug 30 12:41:15 fetch_av[146]: fetch_aduio_thread(), fps: 25.007689
+Aug 30 12:41:17 crond[182]: time disparity of 27171641 minutes detected
+Aug 30 12:41:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 19.773898
+Aug 30 12:41:29 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.082294
+Aug 30 12:42:03 fetch_av[146]: fetch_aduio_thread(), fps: 25.003223
+Aug 30 12:42:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 19.987907
+Aug 30 12:42:30 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.855643
+Aug 30 12:42:35 miio_agent: [20210830 12:42:35] [INFO] S:cmd,fd:6, len:54
+Aug 30 12:42:35 miio_agent: [20210830 12:42:35] [INFO] U:ACK,fd:6, len:56
+Aug 30 12:42:37 miio_agent: [20210830 12:42:37] [INFO] S:cmd,fd:7, len:60
+Aug 30 12:42:37 miio_agent: [20210830 12:42:37] [INFO] U:ACK,fd:7, len:33
+Aug 30 12:42:40 miio_agent: [20210830 12:42:40] [INFO] S:cmd,fd:7, len:63
+Aug 30 12:42:40 miio_agent: [20210830 12:42:40] [INFO] U:ACK,fd:7, len:36
+Aug 30 12:42:49 miio_agent: [20210830 12:42:49] [INFO] S:cmd,fd:6, len:54
+Aug 30 12:42:49 miio_agent: [20210830 12:42:49] [INFO] U:ACK,fd:6, len:56
+Aug 30 12:42:50 miio_agent: [20210830 12:42:50] [INFO] S:cmd,fd:7, len:63
+Aug 30 12:42:50 miio_agent: [20210830 12:42:50] [INFO] U:ACK,fd:7, len:36
+Aug 30 12:42:51 fetch_av[146]: fetch_aduio_thread(), fps: 25.003707
+Aug 30 12:42:52 miio_agent: [20210830 12:42:51] [INFO] S:cmd,fd:7, len:60
+Aug 30 12:42:52 miio_agent: [20210830 12:42:52] [INFO] U:ACK,fd:7, len:33
+Aug 30 12:42:58 miio_agent: [20210830 12:42:58] [INFO] S:cmd,fd:6, len:54
+Aug 30 12:42:58 miio_agent: [20210830 12:42:58] [INFO] U:ACK,fd:6, len:56
+Aug 30 12:43:10 miio_agent: [20210830 12:43:10] [INFO] S:cmd,fd:6, len:54
+Aug 30 12:43:10 miio_agent: [20210830 12:43:10] [INFO] U:ACK,fd:6, len:56
+Aug 30 12:43:12 miio_agent: [20210830 12:43:12] [INFO] S:cmd,fd:6, len:54
+Aug 30 12:43:12 miio_agent: [20210830 12:43:12] [INFO] U:ACK,fd:6, len:56
+Aug 30 12:43:25 miio_agent: [20210830 12:43:25] [INFO] S:cmd,fd:6, len:54
+Aug 30 12:43:25 miio_agent: [20210830 12:43:25] [INFO] U:ACK,fd:6, len:56
+Aug 30 12:43:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004599
+Aug 30 12:43:32 miio_agent: [20210830 12:43:32] [INFO] S:cmd,fd:7, len:68
+Aug 30 12:43:32 miio_agent: [20210830 12:43:32] [INFO] U:ACK,fd:7, len:32
+Aug 30 12:43:33 miio_agent: [20210830 12:43:33] [INFO] S:cmd,fd:7, len:68
+Aug 30 12:43:33 miio_agent: [20210830 12:43:33] [INFO] U:ACK,fd:7, len:33
+Aug 30 12:43:33 fetch_av[146]: video_stream_thread(),video chn 0, fps: 18.946783
+Aug 30 12:43:34 miio_agent: [20210830 12:43:34] [INFO] S:cmd,fd:6, len:54
+Aug 30 12:43:34 miio_agent: [20210830 12:43:34] [INFO] U:ACK,fd:6, len:56
+Aug 30 12:43:34 miio_agent: [20210830 12:43:34] [INFO] S:cmd,fd:7, len:84
+Aug 30 12:43:34 miio_agent: [20210830 12:43:34] [INFO] U:ACK,fd:7, len:38
+Aug 30 12:43:39 miio_agent: [20210830 12:43:39] [INFO] S:cmd,fd:7, len:68
+Aug 30 12:43:39 miio_agent: [20210830 12:43:39] [INFO] U:ACK,fd:7, len:32
+Aug 30 12:43:39 fetch_av[146]: fetch_aduio_thread(), fps: 24.992105
+Aug 30 12:43:39 miio_agent: [20210830 12:43:39] [INFO] S:cmd,fd:7, len:68
+Aug 30 12:43:39 miio_agent: [20210830 12:43:39] [INFO] U:ACK,fd:7, len:33
+Aug 30 12:43:45 miio_agent: [20210830 12:43:45] [INFO] S:cmd,fd:6, len:54
+Aug 30 12:43:45 miio_agent: [20210830 12:43:45] [INFO] U:ACK,fd:6, len:56
+Aug 30 12:44:06 miio_agent: [20210830 12:44:06] [INFO] S:cmd,fd:6, len:54
+Aug 30 12:44:06 miio_agent: [20210830 12:44:06] [INFO] U:ACK,fd:6, len:56
+Aug 30 12:44:27 fetch_av[146]: fetch_aduio_thread(), fps: 25.002613
+Aug 30 12:44:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004607
+Aug 30 12:44:34 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.839277
+Aug 30 12:44:38 miio_agent: [20210830 12:44:38] [INFO] S:cmd,fd:7, len:63
+Aug 30 12:44:38 miio_agent: [20210830 12:44:38] [INFO] U:ACK,fd:7, len:36
+Aug 30 12:45:01 crond[182]: USER root pid 453 cmd /mnt/data/bin/log2tf.sh
+Aug 30 12:45:10 miio_sdcard[175]: refresh sdcard state due to New Record
+Aug 30 12:45:15 fetch_av[146]: fetch_aduio_thread(), fps: 25.002429
+Aug 30 12:45:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004602
+Aug 30 12:45:28 miio_algo[152]: [ingenic_ircut_ctrl] u32ExposureTime: 117701
+Aug 30 12:45:28 miio_algo[152]: [ingenic_ircut_ctrl] u32AnalogGain: 29
+Aug 30 12:45:28 miio_algo[152]: [ingenic_ircut_ctrl] u32DGain: 3
+Aug 30 12:45:28 miio_algo[152]: [ingenic_ircut_ctrl] gb_gain: 249.000000
+Aug 30 12:45:28 miio_algo[152]: [ingenic_ircut_ctrl] gr_gain: 259.000000
+Aug 30 12:45:28 miio_algo[152]: [ingenic_ircut_ctrl] gr_gain_record: 200.000000
+Aug 30 12:45:28 miio_algo[152]: [ingenic_ircut_ctrl] gb_gain_record: 200.000000
+Aug 30 12:45:34 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.888543
+Aug 30 12:45:52 miio_cloud[162]: MemTotal:36080  MemFree:1400  MemAvailable:900  Buffers:12612 Cached:208
+Aug 30 12:46:03 fetch_av[146]: fetch_aduio_thread(), fps: 25.002215
+Aug 30 12:46:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004605
+Aug 30 12:46:36 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.421947
+Aug 30 12:46:51 fetch_av[146]: fetch_aduio_thread(), fps: 24.993267
+Aug 30 12:47:02 miio_agent: [20210830 12:47:02] [INFO] S:cmd,fd:7, len:63
+Aug 30 12:47:02 miio_agent: [20210830 12:47:02] [INFO] U:ACK,fd:7, len:36
+Aug 30 12:47:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004604
+Aug 30 12:47:39 fetch_av[146]: fetch_aduio_thread(), fps: 25.002981
+Aug 30 12:47:41 fetch_av[146]: video_stream_thread(),video chn 0, fps: 18.310886
+Aug 30 12:47:49 miio_agent: [20210830 12:47:49] [INFO] S:cmd,fd:7, len:63
+Aug 30 12:47:49 miio_agent: [20210830 12:47:49] [INFO] U:ACK,fd:7, len:36
+Aug 30 12:47:57 miio_sdcard[175]: refresh sdcard state due to New Record
+Aug 30 12:48:14 miio_agent: [20210830 12:48:14] [INFO] S:cmd,fd:7, len:63
+Aug 30 12:48:14 miio_agent: [20210830 12:48:14] [INFO] U:ACK,fd:7, len:36
+Aug 30 12:48:27 fetch_av[146]: fetch_aduio_thread(), fps: 25.002385
+Aug 30 12:48:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004602
+Aug 30 12:48:42 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.938141
+Aug 30 12:49:15 fetch_av[146]: fetch_aduio_thread(), fps: 24.992990
+Aug 30 12:49:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004603
+Aug 30 12:49:42 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.971320
+Aug 30 12:50:00 crond[182]: user root: process already running: /mnt/data/bin/log2tf.sh
+Aug 30 12:50:03 fetch_av[146]: fetch_aduio_thread(), fps: 25.002535
+Aug 30 12:50:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004605
+Aug 30 12:50:29 miio_algo[152]: [ingenic_ircut_ctrl] u32ExposureTime: 106074
+Aug 30 12:50:29 miio_algo[152]: [ingenic_ircut_ctrl] u32AnalogGain: 29
+Aug 30 12:50:29 miio_algo[152]: [ingenic_ircut_ctrl] u32DGain: 3
+Aug 30 12:50:29 miio_algo[152]: [ingenic_ircut_ctrl] gb_gain: 251.000000
+Aug 30 12:50:29 miio_algo[152]: [ingenic_ircut_ctrl] gr_gain: 258.000000
+Aug 30 12:50:29 miio_algo[152]: [ingenic_ircut_ctrl] gr_gain_record: 200.000000
+Aug 30 12:50:29 miio_algo[152]: [ingenic_ircut_ctrl] gb_gain_record: 200.000000
+Aug 30 12:50:43 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.437631
+Aug 30 12:50:51 fetch_av[146]: fetch_aduio_thread(), fps: 25.003164
+Aug 30 12:50:53 miio_cloud[162]: MemTotal:36080  MemFree:1616  MemAvailable:448  Buffers:12708 Cached:208
+Aug 30 12:51:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004602
+Aug 30 12:51:39 fetch_av[146]: fetch_aduio_thread(), fps: 25.002928
+Aug 30 12:51:44 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.790249
+Aug 30 12:51:59 miio_sdcard[175]: refresh sdcard state due to New Record
+Aug 30 12:52:27 fetch_av[146]: fetch_aduio_thread(), fps: 24.992013
+Aug 30 12:52:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004604
+Aug 30 12:52:44 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.921554
+Aug 30 12:52:59 miio_sdcard[175]: refresh sdcard state due to New Record
+Aug 30 12:53:15 fetch_av[146]: fetch_aduio_thread(), fps: 25.002839
+Aug 30 12:53:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004602
+Aug 30 12:53:45 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.741387
+Aug 30 12:53:59 miio_sdcard[175]: refresh sdcard state due to New Record
+Aug 30 12:54:03 fetch_av[146]: fetch_aduio_thread(), fps: 25.002348
+Aug 30 12:54:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004609
+Aug 30 12:54:50 fetch_av[146]: fetch_aduio_thread(), fps: 25.502480
+Aug 30 12:54:50 fetch_av[146]: video_stream_thread(),video chn 0, fps: 18.352848
+Aug 30 12:55:00 crond[182]: USER root pid 648 cmd /mnt/data/bin/log2tf.sh
+Aug 30 12:55:16 miio_sdcard[175]: refresh sdcard state due to New Record
+Aug 30 12:55:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004597
+Aug 30 12:55:29 miio_algo[152]: [ingenic_ircut_ctrl] u32ExposureTime: 99148
+Aug 30 12:55:29 miio_algo[152]: [ingenic_ircut_ctrl] u32AnalogGain: 29
+Aug 30 12:55:29 miio_algo[152]: [ingenic_ircut_ctrl] u32DGain: 3
+Aug 30 12:55:29 miio_algo[152]: [ingenic_ircut_ctrl] gb_gain: 252.000000
+Aug 30 12:55:29 miio_algo[152]: [ingenic_ircut_ctrl] gr_gain: 258.000000
+Aug 30 12:55:29 miio_algo[152]: [ingenic_ircut_ctrl] gr_gain_record: 200.000000
+Aug 30 12:55:29 miio_algo[152]: [ingenic_ircut_ctrl] gb_gain_record: 200.000000
+Aug 30 12:55:38 fetch_av[146]: fetch_aduio_thread(), fps: 25.002560
+Aug 30 12:55:51 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.905078
+Aug 30 12:55:54 miio_cloud[162]: MemTotal:36080  MemFree:1544  MemAvailable:348  Buffers:12148 Cached:208
+Aug 30 12:56:26 fetch_av[146]: fetch_aduio_thread(), fps: 25.002321
+Aug 30 12:56:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004603
+Aug 30 12:56:46 miio_sdcard[175]: refresh sdcard state due to New Record
+Aug 30 12:56:51 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.954739
+Aug 30 12:57:14 fetch_av[146]: fetch_aduio_thread(), fps: 24.991987
+Aug 30 12:57:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004606
+Aug 30 12:57:52 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.564383
+Aug 30 12:58:02 fetch_av[146]: fetch_aduio_thread(), fps: 25.002478
+Aug 30 12:58:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004601
+Aug 30 12:58:41 miio_sdcard[175]: refresh sdcard state due to New Record
+Aug 30 12:58:50 fetch_av[146]: fetch_aduio_thread(), fps: 25.002510
+Aug 30 12:58:53 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.790252
+Aug 30 12:59:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004606
+Aug 30 12:59:38 fetch_av[146]: fetch_aduio_thread(), fps: 25.002846
+Aug 30 12:59:44 miio_sdcard[175]: refresh sdcard state due to New Record
+Aug 30 12:59:53 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.888542
+Aug 30 13:00:00 crond[182]: user root: process already running: /mnt/data/bin/log2tf.sh
+Aug 30 13:00:00 crond[182]: USER root pid 865 cmd sleep $((RANDOM%3600)) && /mnt/data/bin/log2mi.sh || echo "crontab: fail to start log2mi" >/dev/kmsg 2>&1
+Aug 30 13:00:23 miio_devicekit[164]: ircut_report count is 0, don't need report!
+Aug 30 13:00:26 fetch_av[146]: fetch_aduio_thread(), fps: 24.992808
+Aug 30 13:00:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004601
+Aug 30 13:00:30 miio_algo[152]: [ingenic_ircut_ctrl] u32ExposureTime: 110496
+Aug 30 13:00:30 miio_algo[152]: [ingenic_ircut_ctrl] u32AnalogGain: 29
+Aug 30 13:00:30 miio_algo[152]: [ingenic_ircut_ctrl] u32DGain: 2
+Aug 30 13:00:30 miio_algo[152]: [ingenic_ircut_ctrl] gb_gain: 251.000000
+Aug 30 13:00:30 miio_algo[152]: [ingenic_ircut_ctrl] gr_gain: 258.000000
+Aug 30 13:00:30 miio_algo[152]: [ingenic_ircut_ctrl] gr_gain_record: 200.000000
+Aug 30 13:00:30 miio_algo[152]: [ingenic_ircut_ctrl] gb_gain_record: 200.000000
+Aug 30 13:00:54 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.822938
+Aug 30 13:00:55 miio_cloud[162]: MemTotal:36080  MemFree:1076  MemAvailable:252  Buffers:12216 Cached:208
+Aug 30 13:01:14 fetch_av[146]: fetch_aduio_thread(), fps: 25.002662
+Aug 30 13:01:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004607
+Aug 30 13:01:44 miio_sdcard[175]: refresh sdcard state due to New Record
+Aug 30 13:01:58 fetch_av[146]: video_stream_thread(),video chn 0, fps: 18.522780
+Aug 30 13:02:02 fetch_av[146]: fetch_aduio_thread(), fps: 25.001783
+Aug 30 13:02:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004602
+Aug 30 13:02:50 fetch_av[146]: fetch_aduio_thread(), fps: 25.003274
+Aug 30 13:02:59 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.888544
+Aug 30 13:03:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004606
+Aug 30 13:03:38 fetch_av[146]: fetch_aduio_thread(), fps: 24.992120
+Aug 30 13:03:59 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.954760
+Aug 30 13:04:26 fetch_av[146]: fetch_aduio_thread(), fps: 25.002167
+Aug 30 13:04:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004602
+Aug 30 13:04:31 miio_sdcard[175]: refresh sdcard state due to New Record
+Aug 30 13:05:00 crond[182]: USER root pid 1075 cmd /mnt/data/bin/log2tf.sh
+Aug 30 13:05:01 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.469160
+Aug 30 13:05:14 fetch_av[146]: fetch_aduio_thread(), fps: 25.002434
+Aug 30 13:05:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004603
+Aug 30 13:05:30 miio_algo[152]: [ingenic_ircut_ctrl] u32ExposureTime: 84858
+Aug 30 13:05:30 miio_algo[152]: [ingenic_ircut_ctrl] u32AnalogGain: 29
+Aug 30 13:05:30 miio_algo[152]: [ingenic_ircut_ctrl] u32DGain: 3
+Aug 30 13:05:30 miio_algo[152]: [ingenic_ircut_ctrl] gb_gain: 252.000000
+Aug 30 13:05:30 miio_algo[152]: [ingenic_ircut_ctrl] gr_gain: 257.000000
+Aug 30 13:05:30 miio_algo[152]: [ingenic_ircut_ctrl] gr_gain_record: 200.000000
+Aug 30 13:05:30 miio_algo[152]: [ingenic_ircut_ctrl] gb_gain_record: 200.000000
+Aug 30 13:05:30 miio_sdcard[175]: refresh sdcard state due to New Record
+Aug 30 13:05:56 miio_cloud[162]: MemTotal:36080  MemFree:1532  MemAvailable:324  Buffers:11728 Cached:208
+Aug 30 13:06:02 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.548472
+Aug 30 13:06:02 fetch_av[146]: fetch_aduio_thread(), fps: 25.002583
+Aug 30 13:06:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004603
+Aug 30 13:06:50 fetch_av[146]: fetch_aduio_thread(), fps: 24.992537
+Aug 30 13:07:02 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.971316
+Aug 30 13:07:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004605
+Aug 30 13:07:38 fetch_av[146]: fetch_aduio_thread(), fps: 25.003471
+Aug 30 13:08:02 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.921640
+Aug 30 13:08:26 fetch_av[146]: fetch_aduio_thread(), fps: 25.003075
+Aug 30 13:08:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004591
+Aug 30 13:09:07 fetch_av[146]: video_stream_thread(),video chn 0, fps: 18.423239
+Aug 30 13:09:14 fetch_av[146]: fetch_aduio_thread(), fps: 24.992980
+Aug 30 13:09:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004616
+Aug 30 13:10:00 crond[182]: user root: process already running: /mnt/data/bin/log2tf.sh
+Aug 30 13:10:02 fetch_av[146]: fetch_aduio_thread(), fps: 25.002843
+Aug 30 13:10:08 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.839277
+Aug 30 13:10:27 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004602
+Aug 30 13:10:31 miio_algo[152]: [ingenic_ircut_ctrl] u32ExposureTime: 81990
+Aug 30 13:10:31 miio_algo[152]: [ingenic_ircut_ctrl] u32AnalogGain: 29
+Aug 30 13:10:31 miio_algo[152]: [ingenic_ircut_ctrl] u32DGain: 3
+Aug 30 13:10:31 miio_algo[152]: [ingenic_ircut_ctrl] gb_gain: 253.000000
+Aug 30 13:10:31 miio_algo[152]: [ingenic_ircut_ctrl] gr_gain: 257.000000
+Aug 30 13:10:31 miio_algo[152]: [ingenic_ircut_ctrl] gr_gain_record: 200.000000
+Aug 30 13:10:31 miio_algo[152]: [ingenic_ircut_ctrl] gb_gain_record: 200.000000
+Aug 30 13:10:36 miio_client_helper: ifname: wlan0
+Aug 30 13:10:36 miio_client_helper: ssid: sincoder
+Aug 30 13:10:36 miio_client_helper: bssid: 20:76:93:4A:CA:8E
+Aug 30 13:10:36 miio_client_helper: freq: 2447
+Aug 30 13:10:36 miio_client_helper: -45
+Aug 30 13:10:36 miio_client_helper: ip: 192.168.99.104
+Aug 30 13:10:37 miio_client_helper: netmask: 255.255.255.0
+Aug 30 13:10:37 miio_client_helper: gw: 192.168.99.1
+Aug 30 13:10:37 miio_client_helper: {"method":"_internal.info","partner_id":"","params":{"hw_ver":"Linux","fw_ver":"3.5.1_0066","ap":{ "ssid":"sincoder","bssid":"20:76:93:4A:CA:8E","rssi":"-45","freq":2447},"netif":{ "localIp":"192.168.99.104","mask":
+Aug 30 13:10:50 miio_agent: [20210830 13:10:50] [INFO] U:new id:9, old_id:4912486, fd:7: len: 50
+Aug 30 13:10:50 miio_agent: [20210830 13:10:50] [INFO] S:cmd,fd:7, len:50
+Aug 30 13:10:51 miio_devicekit[164]: Set system time success: Mon Aug 30 13:10:51 2021
+Aug 30 13:10:51 fetch_av[146]: fetch_aduio_thread(), fps: 25.002043
+Aug 30 13:10:57 miio_cloud[162]: MemTotal:36080  MemFree:1568  MemAvailable:652  Buffers:11284 Cached:240
+Aug 30 13:11:10 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.692842
+Aug 30 13:11:28 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004604
+Aug 30 13:11:39 fetch_av[146]: fetch_aduio_thread(), fps: 25.003925
+Aug 30 13:12:12 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.328119
+Aug 30 13:12:27 fetch_av[146]: fetch_aduio_thread(), fps: 24.992006
+Aug 30 13:12:28 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004605
+Aug 30 13:13:12 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.971320
+Aug 30 13:13:15 fetch_av[146]: fetch_aduio_thread(), fps: 25.003369
+Aug 30 13:13:28 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004602
+Aug 30 13:14:03 fetch_av[146]: fetch_aduio_thread(), fps: 25.002700
+Aug 30 13:14:12 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.938141
+Aug 30 13:14:28 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004604
+Aug 30 13:14:51 fetch_av[146]: fetch_aduio_thread(), fps: 24.992652
+Aug 30 13:15:00 crond[182]: USER root pid 1793 cmd /mnt/data/bin/log2tf.sh
+Aug 30 13:15:16 fetch_av[146]: video_stream_thread(),video chn 0, fps: 18.887079
+Aug 30 13:15:28 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004600
+Aug 30 13:15:32 miio_algo[152]: [ingenic_ircut_ctrl] u32ExposureTime: 76618
+Aug 30 13:15:32 miio_algo[152]: [ingenic_ircut_ctrl] u32AnalogGain: 29
+Aug 30 13:15:32 miio_algo[152]: [ingenic_ircut_ctrl] u32DGain: 3
+Aug 30 13:15:32 miio_algo[152]: [ingenic_ircut_ctrl] gb_gain: 253.000000
+Aug 30 13:15:32 miio_algo[152]: [ingenic_ircut_ctrl] gr_gain: 256.000000
+Aug 30 13:15:32 miio_algo[152]: [ingenic_ircut_ctrl] gr_gain_record: 200.000000
+Aug 30 13:15:32 miio_algo[152]: [ingenic_ircut_ctrl] gb_gain_record: 200.000000
+Aug 30 13:15:39 fetch_av[146]: fetch_aduio_thread(), fps: 25.002568
+Aug 30 13:15:58 miio_cloud[162]: MemTotal:36080  MemFree:2248  MemAvailable:748  Buffers:10204 Cached:240
+Aug 30 13:16:18 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.281585
+Aug 30 13:16:27 fetch_av[146]: fetch_aduio_thread(), fps: 25.002562
+Aug 30 13:16:28 fetch_av[146]: video_stream_thread(),video chn 1, fps: 20.004607
+Aug 30 13:17:15 fetch_av[146]: fetch_aduio_thread(), fps: 25.001986
+Aug 30 13:17:18 fetch_av[146]: video_stream_thread(),video chn 0, fps: 19.855642

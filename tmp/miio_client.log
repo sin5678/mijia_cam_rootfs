@@ -1,0 +1,158 @@
+[19700101 08:00:05] [I] version: miio-client 3.5.1
+[19700101 08:00:05] [I] Set TCP host to "ott.io.mi.com"
+[19700101 08:00:05] [I] Set UDP host to "ot.io.mi.com"
+[19700101 08:00:05] [I] OT smart conn sockfd: 4
+[19700101 08:00:05] [I] OT agent listen fd: 5
+[19700101 08:00:05] [I] BT conn listen fd: 6
+[19700101 08:00:05] [I] Timer fd: 7, interval: 5000 ms
+[19700101 08:00:05] [I] Sync timer fd: 8, interval: 0 ms
+[19700101 08:00:05] [I] ACK timer fd: 9, interval: 3000 ms
+[19700101 08:00:05] [I] pollfds[0]: 4
+[19700101 08:00:05] [I] pollfds[1]: 5
+[19700101 08:00:05] [I] pollfds[2]: 6
+[19700101 08:00:05] [I] pollfds[3]: 7
+[19700101 08:00:05] [I] pollfds[4]: 8
+[19700101 08:00:05] [I] pollfds[5]: 9
+[19700101 08:00:06] [I] OT agent listen accept sockfd: 10
+[19700101 08:00:06] [I] add_client_fd sockfd: 10
+[19700101 08:00:06] [I] OT agent listen accept sockfd: 11
+[19700101 08:00:06] [I] add_client_fd sockfd: 11
+[19700101 08:00:06] [I] handle_internal_hello, fd: 11, STATE: (0)
+[19700101 08:00:06] [W] OT agent internalfd closed: 11
+[19700101 08:00:07] [I] recv local cmd
+[19700101 08:00:07] [I] local.query_status
+[19700101 08:00:07] [I] OT agent listen accept sockfd: 11
+[19700101 08:00:07] [I] add_client_fd sockfd: 11
+[19700101 08:00:07] [I] cmd_internal_response_dinfo:1783 STATE: [STATE_DEVICE_INIT] -> [STATE_DIDKEY_DONE]
+[19700101 08:00:07] [I] OT agent listen accept sockfd: 11
+[19700101 08:00:07] [I] add_client_fd sockfd: 11
+[19700101 08:00:07] [I] handle_internal_hello, fd: 11, STATE: (3)
+[19700101 08:00:07] [W] OT agent internalfd closed: 11
+[19700101 08:00:07] [I] OT agent listen accept sockfd: 11
+[19700101 08:00:07] [I] add_client_fd sockfd: 11
+[19700101 08:00:07] [I] OT agent listen accept sockfd: 11
+[19700101 08:00:07] [I] add_client_fd sockfd: 11
+[19700101 08:00:07] [I] last offline info, improve_program: 1, reason: 0, time: 0, ip: 0, port: 0
+[19700101 08:00:07] [I] OT agent listen accept sockfd: 11
+[19700101 08:00:07] [I] add_client_fd sockfd: 11
+[19700101 08:00:07] [I] cmd_internal_response_dtoken:1561 STATE: [STATE_DIDKEY_DONE] -> [STATE_TOKEN_DONE]
+[19700101 08:00:07] [I] OT agent listen accept sockfd: 11
+[19700101 08:00:07] [I] add_client_fd sockfd: 11
+[19700101 08:00:07] [I] handle_internal_hello, fd: 11, STATE: (4)
+[19700101 08:00:07] [W] OT agent internalfd closed: 11
+[19700101 08:00:07] [I] OT agent listen accept sockfd: 11
+[19700101 08:00:07] [I] add_client_fd sockfd: 11
+[19700101 08:00:07] [I] cmd_internal_res_wifi_conf_status:1194 STATE: [STATE_TOKEN_DONE] -> [STATE_WIFI_STA_MODE]
+[19700101 08:00:07] [I] getaddrinfo (ot.io.mi.com:8053): Name or service not known
+[19700101 08:00:07] [I] getaddrinfo (ott.io.mi.com:80): Name or service not known
+[19700101 08:00:07] [E] server_conn_setup, get_conn_server fail, will try reconnect 10s later
+[19700101 08:00:07] [I] OT agent listen accept sockfd: 12
+[19700101 08:00:07] [I] add_client_fd sockfd: 12
+[19700101 08:00:07] [I] handle_internal_hello, fd: 12, STATE: (6)
+[19700101 08:00:16] [I] recv local cmd
+[19700101 08:00:16] [I] local.query_time
+[19700101 08:00:17] [I] getaddrinfo (ot.io.mi.com:8053): succeed
+[19700101 08:00:17] [I] Add UDP server into list, host ip: 111.13.213.101, port: 8053
+[19700101 08:00:17] [I] Add UDP server into list, host ip: 39.156.44.20, port: 8053
+[19700101 08:00:17] [I] Add UDP server into list, host ip: 111.13.213.100, port: 8053
+[19700101 08:00:17] [I] Add UDP server into list, host ip: 111.13.213.254, port: 8053
+[19700101 08:00:17] [I] Add UDP server into list, host ip: 39.156.44.22, port: 8053
+[19700101 08:00:17] [I] Add UDP server into list, host ip: 39.156.44.19, port: 8053
+[19700101 08:00:17] [I] Add UDP server into list, host ip: 39.156.81.179, port: 8053
+[19700101 08:00:17] [I] Add UDP server into list, host ip: 111.13.213.253, port: 8053
+[19700101 08:00:17] [I] Add UDP server into list, host ip: 39.156.81.176, port: 8053
+[19700101 08:00:17] [I] Add UDP server into list, host ip: 39.156.81.177, port: 8053
+[19700101 08:00:17] [I] Add UDP server into list, host ip: 39.156.44.21, port: 8053
+[19700101 08:00:17] [I] Add UDP server into list, host ip: 39.156.81.178, port: 8053
+[19700101 08:00:17] [I] server_conn_setup:4181 STATE: [STATE_WIFI_STA_MODE] -> [STATE_CLOUD_TRYING]
+[19700101 08:00:18] [I] recv ntp ack, chage cloud sock to: 13
+[19700101 08:00:18] [I] set current conn server to 39.156.44.21, sock: 13
+[19700101 08:00:18] [I] sync time with server, server: 1630298436, local(mono): 18, diff: 1630298418
+[19700101 08:00:18] [W] OT agent internalfd closed: 12
+[19700101 08:00:18] [I] waitting for otc_info ack
+[19700101 08:00:18] [I] OT agent listen accept sockfd: 11
+[19700101 08:00:18] [I] add_client_fd sockfd: 11
+[19700101 08:00:18] [I] cmd_internal_get_info_callback
+[19700101 08:00:18] [I] fw_ver=3.5.1_0066
+[19700101 08:00:18] [I] report_otcinfo_flag: 0
+[19700101 08:00:18] [I] OT agent listen accept sockfd: 11
+[19700101 08:00:18] [I] add_client_fd sockfd: 11
+[19700101 08:00:18] [I] handle_internal_hello, fd: 11, STATE: (7)
+[19700101 08:00:18] [I] S, id:158731256, len:375
+[19700101 08:00:18] [I] _otc.info reported (flag: 0) and got response.
+[19700101 08:00:18] [I] report_otcinfo_callback:1228 STATE: [STATE_CLOUD_TRYING] -> [STATE_CLOUD_CONNECTED]
+[19700101 08:00:18] [I] record_offline():, {"method":"_internal.record_offline","params":{"offline_time":0,"offline_reason":0,"offline_ip":0,"offline_port":0}}
+[19700101 08:00:18] [I] report_ota_state_idle
+[19700101 08:00:18] [W] OT agent internalfd closed: 11
+[19700101 08:00:18] [I] S, id:858217861, len:30
+[19700101 08:00:18] [I] report_ota_state_idle_callback: {"id":858217861,"result":"ok"}
+[19700101 08:00:19] [I] OT agent listen accept sockfd: 11
+[19700101 08:00:19] [I] add_client_fd sockfd: 11
+[19700101 08:00:19] [I] handle_internal_hello, fd: 11, STATE: (8)
+[19700101 08:00:19] [W] record_offline(), 732, ot_agent_internalfd: 11
+[19700101 08:00:19] [I] U, id:6, fd:10
+[19700101 08:00:19] [I] S, id:6, len:22
+[19700101 08:00:32] [I] recv local cmd
+[19700101 08:00:32] [I] local.query_time
+[20210830 12:40:55] [I] U, id:8, fd:10
+[20210830 12:40:55] [I] S, id:8, len:440
+[20210830 12:42:35] [I] S, id:423, len:54
+[20210830 12:42:35] [I] ACK, id:423, fd:10, to:cloud
+[20210830 12:42:37] [I] S, id:424, len:60
+[20210830 12:42:37] [I] ACK, id:424, fd:10, to:cloud
+[20210830 12:42:40] [I] S, id:765347, len:63
+[20210830 12:42:40] [I] ACK, id:765347, fd:10, to:cloud
+[20210830 12:42:49] [I] S, id:425, len:54
+[20210830 12:42:49] [I] ACK, id:425, fd:10, to:cloud
+[20210830 12:42:50] [I] S, id:515880, len:63
+[20210830 12:42:50] [I] ACK, id:515880, fd:10, to:cloud
+[20210830 12:42:51] [I] S, id:426, len:60
+[20210830 12:42:52] [I] ACK, id:426, fd:10, to:cloud
+[20210830 12:42:58] [I] S, id:427, len:54
+[20210830 12:42:58] [I] ACK, id:427, fd:10, to:cloud
+[20210830 12:43:10] [I] S, id:428, len:54
+[20210830 12:43:10] [I] ACK, id:428, fd:10, to:cloud
+[20210830 12:43:12] [I] S, id:429, len:54
+[20210830 12:43:12] [I] ACK, id:429, fd:10, to:cloud
+[20210830 12:43:25] [I] S, id:430, len:54
+[20210830 12:43:25] [I] ACK, id:430, fd:10, to:cloud
+[20210830 12:43:32] [I] S, id:431, len:68
+[20210830 12:43:32] [I] ACK, id:431, fd:10, to:cloud
+[20210830 12:43:33] [I] S, id:432, len:68
+[20210830 12:43:33] [I] ACK, id:432, fd:10, to:cloud
+[20210830 12:43:34] [I] S, id:434, len:54
+[20210830 12:43:34] [I] ACK, id:434, fd:10, to:cloud
+[20210830 12:43:34] [I] S, id:433, len:84
+[20210830 12:43:34] [I] ACK, id:433, fd:10, to:cloud
+[20210830 12:43:39] [I] S, id:435, len:68
+[20210830 12:43:39] [I] ACK, id:435, fd:10, to:cloud
+[20210830 12:43:39] [I] S, id:436, len:68
+[20210830 12:43:39] [I] ACK, id:436, fd:10, to:cloud
+[20210830 12:43:45] [I] S, id:437, len:54
+[20210830 12:43:45] [I] ACK, id:437, fd:10, to:cloud
+[20210830 12:44:06] [I] S, id:438, len:54
+[20210830 12:44:06] [I] ACK, id:438, fd:10, to:cloud
+[20210830 12:44:37] [I] S, id:240205, len:63
+[20210830 12:44:38] [I] ACK, id:240205, fd:10, to:cloud
+[20210830 12:47:02] [I] S, id:889943, len:63
+[20210830 12:47:02] [I] ACK, id:889943, fd:10, to:cloud
+[20210830 12:47:49] [I] S, id:127610, len:63
+[20210830 12:47:49] [I] ACK, id:127610, fd:10, to:cloud
+[20210830 12:48:14] [I] S, id:101246, len:63
+[20210830 12:48:14] [I] ACK, id:101246, fd:10, to:cloud
+[20210830 13:10:36] [I] report_synctime (NTP)
+[20210830 13:10:36] [I] sync time with server, server: 1630300237, local(mono): 1818, diff: 1630298419
+[20210830 13:10:36] [W] OT agent internalfd closed: 11
+[20210830 13:10:37] [I] OT agent listen accept sockfd: 11
+[20210830 13:10:37] [I] add_client_fd sockfd: 11
+[20210830 13:10:37] [I] cmd_internal_get_info_callback
+[20210830 13:10:37] [I] fw_ver=3.5.1_0066
+[20210830 13:10:37] [I] report_otcinfo_flag: 0
+[20210830 13:10:37] [I] OT agent listen accept sockfd: 11
+[20210830 13:10:37] [I] add_client_fd sockfd: 11
+[20210830 13:10:37] [I] handle_internal_hello, fd: 11, STATE: (8)
+[20210830 13:10:37] [W] record_offline(), 732, ot_agent_internalfd: 11
+[20210830 13:10:37] [I] S, id:197503205, len:367
+[20210830 13:10:37] [I] _otc.info reported (flag: 0) and got response.
+[20210830 13:10:50] [I] recv local cmd
+[20210830 13:10:50] [I] local.query_time

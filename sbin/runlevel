@@ -1,0 +1,57 @@
+#!/bin/sh
+
+perpctl A mortox &>/dev/null
+
+probe() {
+    status=$(mortoxc get nvram default bind_status)
+    case "$status" in
+    ok)
+        echo "normal" ;;
+    *)
+        echo "init" ;;
+    esac
+}
+
+get_rl() {
+	mortoxc get mem default runlevel
+}
+
+set_rl() {
+	rl=$1
+	echo "Entering service runlevel $rl"
+    cd /etc/services.d/$1 || return
+	mortoxc set mem default runlevel "$rl"
+    for s in K*; do
+          perpctl X ${s:1}
+    done
+    for s in S*; do
+          perpctl A ${s:1}
+    done
+}
+
+usage() {
+      echo "usage:
+	$1 [-sh] [runlevel]
+	-p   Probe runlevel using bind_status from mortox
+	-h   Print this message
+	-s   Set runlevel" 
+	exit
+}
+
+while getopts "hps:" arg; do
+  case $arg in
+    h)
+      usage $0 
+	  ;;
+	p)
+	  probe
+	  exit
+	;;
+    s)
+		set_rl "$OPTARG"
+		exit
+	;;
+  esac
+done
+
+get_rl

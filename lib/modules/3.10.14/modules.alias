@@ -1,0 +1,5 @@
+# Aliases extracted from modules themselves.
+alias platform:jz-pwm pwmcore
+alias i2c:es8374 audio
+alias sdio:c*v024CdF179* wlan
+alias i2c:ps5250 sensor_ps5250

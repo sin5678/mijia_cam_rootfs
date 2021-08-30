@@ -1,0 +1,17 @@
+#!/bin/sh
+#
+exec 2>&1
+
+. ../.common/rc.main
+TARGET=${1}
+SVNAME=${2}
+
+## start target:
+start() {
+	echo "start fetch_av"
+      [ -f ./fetch_av_set.sh ]  && source ./fetch_av_set.sh
+	echo -1000 >/proc/self/oom_score_adj
+	exec  fetch_av
+}
+
+eval ${TARGET} "$@"

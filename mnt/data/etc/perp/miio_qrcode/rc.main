@@ -1,0 +1,26 @@
+#!/bin/sh
+#
+exec 2>&1
+. ../.common/rc.main
+
+## reset target:
+reset() {
+    case $3 in
+      'exit' )
+        if [ "$4" -eq 0 ]; then
+            echo "perp: $SVNAME exited normally. It will not be restart."
+			runlevel -s normal
+            return 0
+        fi
+          echo "perp: $SVNAME exited status $4" ;;
+      'signal' )
+          echo "perp: $SVNAME killed on signal $5" ;;
+      * )
+          echo "perp: $SVNAME stopped ($3)" ;;
+    esac
+    sleep 1
+    exit 0
+}
+
+
+eval ${TARGET} "$@"

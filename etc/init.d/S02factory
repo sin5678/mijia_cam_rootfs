@@ -1,0 +1,56 @@
+#!/bin/sh 
+
+#must to verify the sdcard
+
+sd_mountdir=/mnt/sdcard
+ft_running_dir=/tmp/ft
+ft_securekey_file=/mnt/data/ft/pubkey.pem
+ft_decrypt=/mnt/data/ft/rsa_decrypt
+ft_files_zip=$sd_mountdir/ft/ft.zip
+
+try_ft_mode()
+{
+	if [ -f $ft_files_zip ] && [ -f $sd_mountdir/ft/secret.bin ];then
+		mkdir -p $ft_running_dir
+		$ft_decrypt $sd_mountdir/ft/secret.bin $ft_running_dir/md5.sum $ft_securekey_file
+		if md5sum -cs $ft_running_dir/md5.sum;then
+			unzip $ft_files_zip -q -d $ft_running_dir
+			chmod -R 755 $ft_running_dir
+			ft_mode=`cat /proc/ft_mode`
+			if [ "$ft_mode" == "" ];then
+				ft_mode=0
+			fi	
+			$ft_running_dir/ft_boot.sh ${ft_mode} ${ft_running_dir}
+			return $?
+		else
+			echo "check fail"
+		fi
+	else
+		echo "ignore ft mode"
+	fi
+	return 1
+}
+
+case "$1" in 
+	start) 
+		mount /dev/mmcblk0p1 /mnt/sdcard || mount /dev/mmcblk0 /mnt/sdcard|| exit $?
+		if [ -f $ft_files_zip ] && try_ft_mode;then
+			/etc/init.d/S03remount_sensor start
+			touch /tmp/factory_mode
+		else
+			umount /mnt/sdcard 
+		fi
+		;;
+	stop)
+		echo "do nothing"
+		;;
+	restart|reload)
+		"$0" stop
+		"$0" start
+		;;
+	*)
+		echo "Usage: $0 {start|stop|restart}"
+		exit 1
+esac
+
+exit $?                             

@@ -1,0 +1,31 @@
+#!/bin/sh
+#
+exec 2>&1
+. ../.common/rc.main
+TARGET=${1}
+SVNAME=${2}
+
+## reset target:
+reset() {
+    case $3 in
+      'exit' )
+          echo "perp: $SVNAME exited status $4" ;;
+      'signal' )
+          echo "perp: $SVNAME killed on signal $5" ;;
+      * )
+          echo "perp: $SVNAME stopped ($3)" ;;
+    esac
+    if [ -p /run/nas/debug ]; then
+        # safely cleanup debug fifo
+        mv /run/nas/debug /run/nas/debug_old
+        cat /run/nas/debug_old &>/dev/null &
+        echo "Closed by perp" > /run/nas/debug_old
+        rm -f /run/nas/debug_old
+    fi
+	update_statistics "$SVNAME"
+	rate_limit
+    exit 0
+}
+
+
+eval ${TARGET} "$@"

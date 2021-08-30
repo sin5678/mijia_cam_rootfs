@@ -1,0 +1,44 @@
+#!/bin/sh
+#
+# Sanity check CONFIG partition
+#
+
+LOG_DIR="/mnt/sdcard/log"
+LOG_FILES="messages miio_client.log"
+
+do_copy() {
+	mount "$1" /mnt/sdcard || return
+
+	for f in $LOG_FILES; do
+		[ ! -f "$LOG_DIR/$f" ] && continue
+		(
+		echo "Copy $f from tf card."
+		cat "$LOG_DIR/$f"
+		echo "Copy end."
+		) > /var/log/$f.old
+	done
+
+	umount /mnt/sdcard
+	
+}
+
+case "$1" in
+	start)
+		echo "Try copy log from TF card"
+		if ! do_copy /dev/mmcblk0p1 && ! do_copy /dev/mmcblk0; then
+			echo "$0: Unable to copy log fron sdcard" >/dev/kmsg
+		fi
+		;;
+    stop)
+        log2tf.sh
+        ;;
+    restart|reload)
+        "$0" stop
+        "$0" start
+        ;;
+    *)
+        echo "Usage: $0 {start|stop|restart}"
+        exit 1
+esac
+
+exit $?
